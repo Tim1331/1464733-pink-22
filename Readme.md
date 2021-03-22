@@ -1,7 +1,7 @@
 # Личный проект «Пинк» 
 
 * Студент: [Тимур Ярматов](https://up.htmlacademy.ru/adaptive/22/user/1464733).
-* Наставник: `Неизвестно`.
+* Наставник: [Илья Приходкин](https://htmlacademy.ru/profile/prikhodkin).
 
 ---
 
