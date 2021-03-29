@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Пинк</title>
+</head>
+
+<body class="page__body">
+  <header class="page-header">
+    <a class="content-header__logo content-header__logo--extra-logo" href="">
+      <img src="https://via.placeholder.com/74*23" width="74" height="23" alt="Сайт сервиса «pink»">
+    </a>
+    <button class="content-header__toogle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+    <nav class="main-nav">
+      <div class="main-nav__wraper">
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item">
+            <a href="#">главная</a>
+          </li>
+          <li class="site-list__item">
+            <a href="catalog.html">фотографии</a>
+          </li>
+          <li class="site-list__item">
+            <a href="form.html">конкурс</a>
+          </li>
+          <li class="site-list__item">
+            <a href="#">htmlacademy</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    </section>
+  </header>
+  <main class="main-page">
+    <h1 class="visually-hidden">Cервис PINK - взгляни на мир по-новому!</h1>
+    <section class="slogan-header">
+      <p class="slogan-header__slogan">Конкурс на самое безбашенное путешествие с Пинк</p>
+    </section>
+    <section class="form-content">
+      <div class="form-content-wrapper offer">
+        <p class="offer__content">Поделитесь своей историей и получите
+          шанс выиграть ценный приз — 1000
+          миль на вашу бонусную карту!</p>
+        <form class="form-content__form" method="post" action="https://echo.htmlacademy.ru">
+          <div class="form-content__full-name">
+            <label class="form-content__surname" for="surname">фамилия:</label>
+            <input class="form-content__input-surname" type="text" id="surname" name="surname"
+              placeholder="Укажите фамилию *">
+            <label class="form-content__name" for="name">имя:</label>
+            <input class="form-content__input-name" type="text" id="name" name="name" placeholder="Введите ваше имя *">
+            <label class="form-content__patronymic" for="patronymic">отчество:</label>
+            <input class="form-content__patronymic" type="text" id="patronymic" name="patronymic"
+              placeholder="Ну и отчество тоже">
+          </div>
+          <div class="form-content__travel crazy-checkbox">
+            <fieldset class="form-content__crazy-travel">
+              <legend class="form-content__crazy-legend">Ваши безбашенные
+                достижения в путешествии</legend>
+              <input class="visuallu-hidden crazy-checkbox__input crazy-checkbox__input--state" name="photo-shark"
+                id="shark" type="checkbox" checked>
+              <label for="shark" class="crazy-checkbox__label">Сделал селфи с акулой</label>
+              <input class="visuallu-hidden crazy-checkbox__input crazy-checkbox__input--state" name="photo-beach"
+                id="beach" type="checkbox" checked>
+              <label for="beach" class="crazy-checkbox__label">Обгорел на пляже</label>
+              <input class="visuallu-hidden crazy-checkbox__input crazy-checkbox__input--state" name="photo-chuck"
+                id="chuck" type="checkbox">
+              <label for="chuck" class="crazy-checkbox__label">Видел Чака Норриса</label>
+              <input class="visuallu-hidden crazy-checkbox__input crazy-checkbox__input--state" name="photo-souvenir"
+                id="souvenir" type="checkbox">
+              <label for="souvenir" class="crazy-checkbox__label">Накупил сувениров</label>
+              <input class="visuallu-hidden crazy-checkbox__input crazy-checkbox__input--state" name="photo-tower"
+                id="tower" type="checkbox" checked>
+              <label for="tower" class="crazy-checkbox__label">Удержал башню</label>
+              <input class="visuallu-hidden crazy-checkbox__input crazy-checkbox__input--state" name="photo-hotel"
+                id="hotel" type="checkbox">
+              <label for="hotel" class="crazy-checkbox__label">Разгромил отель</label>
+              </li>
+              </ul>
+            </fieldset>
+          </div>
+          <div class="form-content__data">
+            <label class="form-content__phone" for="phone">номер телефона</label>
+            <input class="form-content__input-phone" type="text" id="phone" name="number-phone"
+              placeholder="Номер, пожалуйста">
+            <label class="form-content__mail" for="mail">адрес почты</label>
+            <input class="form-content__input-mail" type="text" id="mail" name="address-mail"
+              placeholder="Введите почту *">
+          </div>
+          <div class="form-content__attachment attachment-radio">
+            <fieldset class="form-content__attachment-travel">
+              <legend class="form-content__attachment-legend">с каким приложением путешествовали?</legend>
+              <input class="visuallu-hidden attachment-radio__input attachment-radio__input--state"
+                name="attachment-travel" id="ios" type="radio" checked>
+              <label class="attachment-radio__label" for="ios">Pink для iOS</label>
+              <input class="visuallu-hidden attachment-radio__input attachment-radio__input--state"
+                name="attachment-travel" id="android" type="radio">
+              <label class="attachment-radio__label" for="android">Pink на Android</label>
+              <input class="visuallu-hidden attachment-radio__input attachment-radio__input--state"
+                name="attachment-travel" id="windows" type="radio">
+              <label class="attachment-radio__label" for="windows">Windows Phone</label>
+            </fieldset>
+          </div>
+          <div class="form-content__emotion">
+            <label class="form-content__emotion-label" for="emotion">опишите свои эмоции</label>
+            <textarea class="form-content__textarea" name="you-emotion" id="emotion" cols="30" rows="10">Можно прям в красках, не
+          стесняясь в выражениях</textarea>
+          </div>
+          <button class="form-content__button" type="submit">отправить форму</button>
+        </form>
+        <p class="form-content__reference">&#42;&nbsp;&mdash;&nbsp;обязательные поля</p>
+      </div>
+    </section>
+  </main>
+  <footer class="page-footer">
+    <div class="page-footer__wraper">
+      <a href="#" class="page-footer__logo">pink</a>
+      <div class="page-footer__social social">
+        <ul class="social__list">
+          <li class="social__item">
+            <a href="https://twitter.com/" class="social__link social__link--twitter">Твиттер</a>
+          </li>
+          <li class="social__item">
+            <a href="https://twitter.com/" class="social__link social__link--facebook">Фейсбук</a>
+          </li>
+          <li class="social__item">
+            <a href="https://twitter.com/" class="social__link social__link--youtube">Youtube</a>
+          </li>
+        </ul>
+      </div>
+      <div class="page-footer__copyright copyright">
+        <b class="copyright__text">Разработано:</b>
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+      </div>
+    </div>
+  </footer>
+  <section class="modal-failure">
+    <div class="modal-failure__position">
+      <h2 class="modal-failure__header">Что-то пошло не так!</h2>
+      <p class="modal-failure__message">Проверьте поля, выделенные красным,
+        скорее всего вы забыли их заполнить</p>
+      <button class="modal-failure__button" type="button">ок</button>
+    </div>
+  </section>
+  <section class="modal-success">
+    <div class="modal-succes__position">
+      <h2 class="modal-success__header">Ваша заявка отправлена</h2>
+      <p class="modal-success__message">Спасибо за ваше участие, ваша заявка
+        уже поступила к нам. В ближайшее
+        время мы рассмотрим ее и
+        оповестим вас.</p>
+      <button class="modal-succes__button" type="button">закрыть окно</button>
+    </div>
+  </section>
+</body>
+
+</html>
