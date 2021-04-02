@@ -1,0 +1,36 @@
+.price__table {
+  text-transform: uppercase;
+}
+
+.price__table-header {
+  background-color: @base-color;
+}
+
+.price {
+  background-color: @bg-grey;
+
+  &__header-content:first-of-type {
+    color: @light;
+    .weight(@seven-hundred);
+    .size(@sixteen);
+    .lh(@thirty);
+    .center;
+  }
+
+  &__header-content:last-of-type {
+    color: @light;
+    font-weight: 300;
+    .size(@eighteen);
+    .lh(@thirty);
+  }
+}
+
+.price__cell {
+  vertical-align: middle;
+  text-align: left;
+  background-color: @light;
+}
+
+.price__content {
+  .lh(@thirty);
+}
