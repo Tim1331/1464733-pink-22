@@ -1,0 +1,66 @@
+.form-content__full-name {
+  margin-top: 50px;
+  padding-bottom: 44px;
+}
+
+.form-content__surname,
+.form-content__name,
+.form-content__patronymic,
+.form-content__phone,
+.form-content__mail {
+  color: @varnich;
+  .uppercase;
+  .lh(@thirty);
+}
+
+.form-content__crazy-legend,
+.form-content__attachment-legend,
+.form-content__textarea-legend {
+  color: @varnich;
+  .uppercase;
+  .lh(@eighteen);
+}
+
+.form-content {
+  padding-top: 54px;
+
+  &__input-surname::placeholder,
+  &__input-name::placeholder,
+  &__input-patronymic::placeholder,
+  &__input-phone::placeholder,
+  &__input-mail::placeholder {
+    color: @base-color;
+    .size(@eighteen);
+    .lh(@thirty);
+    padding-left: 20px;
+  }
+}
+
+.form-content__textarea {
+  .center;
+  color: @base-color;
+  .size(@eighteen);
+  .lh(@thirty);
+  padding-left: 20px;
+}
+
+
+.form-content__crazy-travel,
+.form-content__attachment-travel {
+  border: 0;
+}
+
+.form-content__data {
+  padding-top: 42px;
+  padding-bottom: 44px;
+}
+
+.form-content__button {
+  margin-bottom: 46px;
+}
+
+.form-content__reference {
+  margin: 0;
+  .uppercase;
+  .lh(@thirty);
+}
