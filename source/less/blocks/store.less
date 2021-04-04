@@ -1,6 +1,28 @@
 .store {
-  background-color: @back-blue;
-  padding-top: 28px;
+  background-color: @asphalt;
+  height: 271px;
+
+  @media (min-width: @tablet-width) {
+    background: @temporarily;
+    height: 351px;
+  }
+
+  @media (min-width: @desktop-width) {
+    background: @temporarily;
+    height: 404px;
+  }
+}
+
+.store__wrapper {
+  .wrapper;
+
+  @media (min-width: @tablet-width) {
+    background: @temporarily;
+  }
+
+  @media (min-width: @desktop-width) {
+    height: inherit;
+  }
 }
 
 .store__install {
@@ -14,11 +36,22 @@
   .weight(@seven-hundred);
   .size(@eighteen);
   .lh(@eighteen);
+  width: 274px;
+
+  @media (min-width: @tablet-width) {
+    width: 294px;
+  }
 }
 
 .store__explanation {
-  .center;
   color: @light;
   .weight(@three-hundred);
   .lh(@twenty-four);
+  .center;
+
+  @media (min-width: @tablet-width) {
+    .size(@eighteen);
+    .lh(@twenty-four);
+    width: 300px;
+  }
 }

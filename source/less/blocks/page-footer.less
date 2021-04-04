@@ -1,15 +1,23 @@
-.page-footer {
-  padding-top: 40px;
-}
-
 .page-footer__wrapper {
-  .center;
+  .wrapper;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+
+  @media (min-width: @tablet-width) {
+    flex-direction: row;
+  }
 }
 
 .page-footer__logo {
-  display: block;
+  margin-bottom: 41px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 0;
+  }
 }
 
 .page-footer__copyright {
-  margin-top: 41px;
+  margin-top: 0;
 }

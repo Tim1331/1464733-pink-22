@@ -1,12 +1,10 @@
-.advantages-list {
-  background-color: @bg-grey;
-  margin: 0;
-  padding: 0;
-}
-
 .advantages-list__item {
   list-style: none;
   .center;
+
+  @media (min-width: @desktop-width) {
+    width: 252px;
+  }
 }
 
 .advantages-list__header {
@@ -18,4 +16,13 @@
 
 .advantages-list__content {
   .lh(@twenty-four);
+  .center;
+
+  @media (min-width: @tablet-width) {
+    .left;
+  }
+
+  @media (min-width: @desktop-width) {
+    .justify;
+  }
 }
