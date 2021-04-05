@@ -1,13 +1,28 @@
 .site-list {
-  margin: 0;
-  padding: 0;
+  .size(@eighteen);
+  .lh(@thirty-two);
+  color: @light;
+  list-style: none;
 }
 
 .site-list__item {
   background-color: @base-color;
-  list-style: none;
-  .center;
-  text-transform: uppercase;
+  border-top: 2px solid @light;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 25px 0;
+
+  @media (min-width: @desktop-width) {
+    border: 0;
+    padding: 0;
+  }
+}
+
+.site-list__item:not(:last-child) {
+  @media (min-width: @desktop-width) {
+    margin-right: 78px;
+  }
 }
 
 .site-list__link {

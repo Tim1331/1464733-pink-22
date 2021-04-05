@@ -1,12 +1,40 @@
 .slogan {
   background-color: @temporarily;
+
+  @media (min-width: @tablet-width) {
+    .wrapper;
+  }
+}
+
+.slogan__wrapper {
+  .wrapper;
+  background-color: @temporarily;
+  height: inherit;
+  position: relative;
 }
 
 .slogan__leed {
   color: @light;
-  text-align: center;
+  .center;
   .size(@twenty-four);
   .weight(@three-hundred);
   .lh(@twenty-nine);
   margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 29px;
+
+  @media (min-width: @tablet-width) {
+    .size(@sixteen + @twenty-four);
+    .lh(@twenty-four + @twenty-four);
+    width: 300px;
+    position: absolute;
+    top: 102px;
+  }
+
+  @media (min-width: @desktop-width) {
+    .size(@twenty-five + @twenty-five);
+    .lh(@eighteen + 50);
+    top: 114px;
+  }
 }

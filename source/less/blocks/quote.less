@@ -1,17 +1,43 @@
+.quote {
+  background-color: @light;
+
+  &__data--existence {
+    display: block;
+    .weight(@four-hundred);
+    .size(@fourteen);
+    .lh(@thirty);
+    color: @base-color;
+
+    @media (min-width: @desktop-width) {
+      .size(@twenty-four);
+    }
+  }
+}
+
+.quote__wrapper {
+  .wrapper;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+
+  @media (min-width: @tablet-width) {
+    justify-content: flex-start;
+  }
+}
+
 .quote__author {
   display: block;
   .center;
   color: @dark;
-  font-weight: bold;
+  .weight(@seven-hundred);
   .size(@eighteen);
   line-height: 30px;
   font-style: normal;
   margin-top: 45px;
-}
 
-.quote {
-  &__data--existence {
-    display: none;
+  @media (min-width: @tablet-width) {
+    .size(@twenty-four);
+    order: 2;
   }
 }
 
@@ -19,4 +45,9 @@
   .weight(@four-hundred);
   .lh(@thirty);
   .center;
+
+  @media (min-width: @tablet-width) {
+    .size(@eighteen);
+    .lh(@thirty);
+  }
 }

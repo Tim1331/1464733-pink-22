@@ -1,5 +1,10 @@
-.main-nav {
-  .size(@eighteen);
-  .lh(@thirty-two);
-  color: @light;
+.main-nav__list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: @desktop-width) {
+    flex-direction: row;
+  }
 }

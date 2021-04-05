@@ -1,5 +1,21 @@
+.price__wrapper {
+  .wrapper;
+  background-color: @bg-grey;
+}
+
+
 .price__table {
   text-transform: uppercase;
+  margin-left: -122px;
+
+  @media (min-width: @tablet-width) {
+    width: 613px;
+    .wrapper;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 940px;
+  }
 }
 
 .price__table-header {
@@ -7,30 +23,50 @@
 }
 
 .price {
-  background-color: @bg-grey;
+  &__table-header--empty {
+    @media (min-width: @tablet-width) {
+      opacity: 0;
+    }
+  }
+
+  &__cell--hidden {
+    @media (min-width: @tablet-width) {
+      text-transform: none;
+      background-color: @light;
+      opacity: 1;
+    }
+  }
 
   &__header-content:first-of-type {
-    color: @light;
-    .weight(@seven-hundred);
-    .size(@sixteen);
-    .lh(@thirty);
-    .center;
+    @media (min-width: @tablet-width) {
+      color: @light;
+      .weight(@seven-hundred);
+      .size(@sixteen);
+      .lh(@thirty);
+      .center;
+    }
   }
 
   &__header-content:last-of-type {
-    color: @light;
-    font-weight: 300;
-    .size(@eighteen);
-    .lh(@thirty);
+    @media (min-width: @tablet-width) {
+      color: @light;
+      font-weight: 300;
+      .size(@eighteen);
+      .lh(@thirty);
+    }
   }
 }
 
 .price__cell {
-  vertical-align: middle;
-  text-align: left;
-  background-color: @light;
+  @media (min-width: @tablet-width) {
+    vertical-align: middle;
+    text-align: left;
+    background-color: @light;
+  }
 }
 
 .price__content {
-  .lh(@thirty);
+  @media (min-width: @tablet-width) {
+    .lh(@thirty);
+  }
 }
