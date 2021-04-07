@@ -1,12 +1,17 @@
 .page-footer__wrapper {
-  .wrapper;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
 
   @media (min-width: @tablet-width) {
     flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: 0 130px;
+    width: 78.334%;
   }
 }
 
