@@ -5,4 +5,32 @@
 .crazy-checkbox__label {
   .size(@eighteen);
   .lh(@thirty);
+
+  @media (min-width: @desktop-width) {
+    margin-left: 137px;
+
+    &:first-of-type {
+      order: -5;
+    }
+
+    &:nth-of-type(2) {
+      order: -2;
+    }
+
+    &:nth-of-type(3) {
+      order: -4;
+    }
+
+    &:nth-of-type(4) {
+      order: -1;
+    }
+
+    &:nth-of-type(5) {
+      order: -3;
+    }
+
+    &:last-of-type {
+      order: 0;
+    }
+  }
 }

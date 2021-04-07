@@ -23,7 +23,6 @@
     justify-content: space-between;
     flex-wrap: wrap;
     align-items: center;
-    .wrapper;
   }
 }
 
@@ -40,8 +39,15 @@
   }
 
   @media (min-width: @desktop-width) {
-    width: 433px;
+    width: 46.064%;
     padding: 0;
+    margin-top: -195px;
+  }
+}
+
+.form-content__travel {
+  @media (min-width: @desktop-width) {
+    width: 100%;
   }
 }
 
@@ -52,14 +58,34 @@
   @media (min-width: @tablet-width) {
     order: -2;
   }
+
+  @media (min-width: @desktop-width) {
+    width: 100%;
+  }
+}
+
+.form-content__data-legend {
+  color: @varnich;
+  .uppercase;
+  .lh(@eighteen);
+  .center;
 }
 
 .form-content__attachment {
   @media (min-width: @tablet-width) {
     order: -3;
   }
+
+  @media (min-width: @desktop-width) {
+    width: 45.852%;
+  }
 }
 
+.form-content__emotion {
+  @media (min-width: @desktop-width) {
+    width: 100%;
+  }
+}
 
 .form-content__crazy-travel {
   display: flex;
@@ -67,6 +93,13 @@
   padding: 0;
   margin: 0;
   border: 0;
+
+  @media (min-width: @desktop-width) {
+    border: 2px solid grey;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 54px 59px 57px 60px;
+  }
 }
 
 .form-content__user-data {
@@ -75,6 +108,36 @@
   padding: 0;
   margin: 0;
   border: 0;
+
+  @media (min-width: @desktop-width) {
+    border: 2px solid grey;
+    padding: 44px 60px 55px 60px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    //justify-content: space-between;
+  }
+}
+
+.form-content__phone {
+  color: @varnich;
+  .uppercase;
+  .lh(@thirty);
+
+  @media (min-width: @desktop-width) {
+    order: -1;
+    margin-left: 20px;
+  }
+}
+
+.form-content__mail {
+  color: @varnich;
+  .uppercase;
+  .lh(@thirty);
+
+  @media (min-width: @desktop-width) {
+    order: 0;
+    margin-left: 38.7%;
+  }
 }
 
 .form-content__attachment-travel {
@@ -83,13 +146,16 @@
   padding: 0;
   margin: 0;
   border: 0;
+
+  @media (min-width: @desktop-width) {
+    border: 2px solid grey;
+    padding: 61px 164px 133px 66px;
+  }
 }
 
 .form-content__surname,
 .form-content__name,
-.form-content__patronymic,
-.form-content__phone,
-.form-content__mail {
+.form-content__patronymic {
   color: @varnich;
   .uppercase;
   .lh(@thirty);
@@ -115,7 +181,7 @@
   color: @base-color;
   .size(@eighteen);
   .lh(@thirty);
-  width: 99.29%;
+  width: 100%;
   padding: 0;
   resize: none;
   border: 2px solid grey;
@@ -125,9 +191,12 @@
   padding: 0;
   margin: 0;
   border: 0;
+
+  @media (min-width: @desktop-width) {
+    border: 2px solid grey;
+    padding: 44px 60px 45px 60px;
+  }
 }
-
-
 
 .form-content__button {
   margin-bottom: 46px;
@@ -137,4 +206,10 @@
   .uppercase;
   .lh(@thirty);
   .center;
+
+  @media (min-width: @desktop-width) {
+    position: absolute;
+    right: 0;
+    top: 1060px;
+  }
 }
