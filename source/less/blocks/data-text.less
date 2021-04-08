@@ -6,4 +6,28 @@
     .lh(@thirty);
     color: @base-color;
   }
+
+  width: 95.715%;
+  padding: 0;
+
+  @media (min-width: @tablet-width) {
+    width: 78.3%;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 76.674%;
+
+    &--info {
+      width: 44.976%;
+
+      &:first-of-type {
+        order: -3;
+        margin-right: 70px;
+      }
+
+      &:last-of-type {
+        order: -2;
+      }
+    }
+  }
 }
