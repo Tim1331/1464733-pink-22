@@ -5,3 +5,24 @@
 .filter-elements__icon {
   margin-top: 43px;
 }
+
+.filter-elements-image {
+  .wrapper;
+  width: 280px;
+  height: 374px;
+  outline: 2px solid black;
+  outline-offset: -2px;
+  margin-bottom: 42px;
+
+  @media (min-width: @tablet-width) {
+    width: 300px;
+    height: 400px;
+    margin: 0;
+    margin-right: 45px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-right: 90px;
+    margin-left: 80px;
+  }
+}
