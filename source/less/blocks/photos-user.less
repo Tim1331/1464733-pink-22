@@ -1,6 +1,16 @@
 .photos-user__wrapper {
-  padding-left: 20px;
-  padding-right: 20px;
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: @tablet-width) {
+    .wrapper;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 0;
+    width: 940px;
+  }
 }
 
 .photos-user__apple {
@@ -10,9 +20,15 @@
   .lh(@thirty);
 }
 
-.photos-user {
-  &__apple:nth-of-type(2),
-  &__apple:last-of-type {
-    margin-top: 0;
+.photos-user__apple:last-of-type {
+  margin-top: 0;
+  margin-bottom: 52px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 78px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 75px;
   }
 }

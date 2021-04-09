@@ -1,0 +1,20 @@
+.block-offer {
+  margin: 0;
+  margin-top: 54px;
+  .center;
+  .lh(@thirty);
+  .size(@eighteen);
+
+  &:last-of-type {
+    margin-top: 0;
+    margin-bottom: 52px;
+
+    @media (min-width: @tablet-width) {
+      margin-bottom: 78px;
+    }
+
+    @media (min-width: @desktop-width) {
+      margin-bottom: 75px;
+    }
+  }
+}
