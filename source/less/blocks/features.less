@@ -14,14 +14,19 @@
 .features__wrapper {
   .wrapper;
   background-color: @light;
+  width: 87.5%;
+  outline: 5px solid red;
+  outline-offset: -5px;
 
   @media (min-width: @tablet-width) {
+    width: 93.94%;
     display: grid;
     grid-template-rows: 255px 547px;
     grid-template-columns: 310px 310px;
   }
 
   @media (min-width: @desktop-width) {
+    width: 78.334%;
     background-color: @light;
     display: flex;
     flex-direction: column;
@@ -57,7 +62,16 @@
 
 .features__slogan:nth-of-type(2) {
   @media (min-width: @tablet-width) {
+    margin-top: 113px;
+    text-align: center;
+    outline: 2px solid green;
+    outline-offset: -2px;
+    padding: 0 30px;
+  }
+
+  @media (min-width: @desktop-width) {
     margin-top: 0;
+    padding: 0 110px;
   }
 }
 
