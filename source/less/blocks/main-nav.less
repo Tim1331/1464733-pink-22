@@ -3,8 +3,18 @@
   padding: 0;
   display: flex;
   flex-direction: column;
+  position: relative;
+  z-index: 2;
 
   @media (min-width: @desktop-width) {
     flex-direction: row;
+  }
+}
+
+.main-nav--closed {
+  display: none;
+
+  @media (min-width: @desktop-width) {
+    display: block;
   }
 }
