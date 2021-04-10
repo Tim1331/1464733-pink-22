@@ -3,19 +3,27 @@
   .lh(@thirty-two);
   color: @light;
   list-style: none;
+  border-top: 1px solid @dark;
+
+  @media (min-width: @desktop-width) {
+    border-top: 0;
+  }
 }
 
 .site-list__item {
   background-color: @base-color;
-  border-top: 2px solid @light;
+  border-top: 1px solid @item-color;
+  border-bottom: 1px solid @dark;
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 25px 0;
+  height: 11px;
 
   @media (min-width: @desktop-width) {
     border: 0;
     padding: 0;
+    background-color: transparent;
   }
 }
 
@@ -29,4 +37,19 @@
   color: @light;
   text-decoration: none;
   .uppercase;
+  .weight(@seven-hundred);
+  background-color: transparent;
+
+  &:hover {
+    color: @varnich;
+  }
+
+  &:active {
+    color: fade(@varnich, 30%);
+  }
+
+  @media (min-width: @desktop-width) {
+    text-transform: none;
+    .weight(@four-hundred);
+  }
 }
