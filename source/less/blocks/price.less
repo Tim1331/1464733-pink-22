@@ -3,7 +3,6 @@
   background-color: @bg-grey;
 }
 
-
 .price__table {
   text-transform: uppercase;
   margin-left: -138px;
@@ -23,6 +22,10 @@
 }
 
 .price {
+  @media (min-width: @tablet-width) {
+    margin-top: 112px;
+  }
+
   &__table-header--empty {
     @media (min-width: @tablet-width) {
       opacity: 0;
