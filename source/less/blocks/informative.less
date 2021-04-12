@@ -16,8 +16,13 @@
 .informative__wrapper {
   @media (min-width: @tablet-width) {
     height: inherit;
+    width: 93.94%;
+    .wrapper;
     display: grid;
     grid-template-columns: 50% 50%;
+    background-image: url("../img/twentyfour.svg"), url("../img/diagramfill.svg"), url("../img/timer.svg");
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-position: 76px 175px, 27px 110px, 9px 54px;
   }
 
   @media (min-width: @desktop-width) {
@@ -25,6 +30,9 @@
     background-color: @bg-grey;
     grid-template-columns: 39.255% 60.745%;
     width: 78.334%;
+    margin-top: -46px;
+    background-size: 139px 89px, 254px 254px, 298px 345px;
+    background-position: 92px 213px, 33px 131px, 10px 62px;
   }
 }
 
