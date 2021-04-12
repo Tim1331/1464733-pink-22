@@ -1,35 +1,150 @@
 .features {
   height: 1002px;
-  background-color: @light;
+  background-image: url("../img/iphonescreenmobile.jpg"), url("../img/iphone3.png"), url("../img/greybackground.png");
+  background-repeat: no-repeat, no-repeat, no-repeat;
+  background-position: 50.7% 96.7%, 50% 102.8%, 0% 130px;
+  background-size: 43% 23.7%, 49% 31.9%, 100% 100%;
 
   @media (min-width: @tablet-width) {
     height: 725px;
+    background-image: url("../img/iphonescreen3tablet.jpg"), url("../img/iphone3tablet.png"), url("../img/greybackgroundtablet.png");
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-position: 9.3% 102.3%, 5.8% 137%, 0% 210px;
+    background-size: 35.6% 58.5%, 40.6% 75.4%, 100% 100%;
   }
 
   @media (min-width: @desktop-width) {
+    margin-top: 13px;
     height: 933px;
+    background-image: url("../img/greybackgrounddesktop.png");
+    background-repeat: no-repeat;
+    background-position: 0 316px;
+    background-size: 100%;
   }
 }
 
 .features__wrapper {
   .wrapper;
-  background-color: @light;
   width: 87.5%;
-  outline: 5px solid red;
-  outline-offset: -5px;
 
   @media (min-width: @tablet-width) {
     width: 93.94%;
     display: grid;
     grid-template-rows: 255px 547px;
-    grid-template-columns: 310px 310px;
+    grid-template-columns: 50% 50%;
   }
 
   @media (min-width: @desktop-width) {
     width: 78.334%;
-    background-color: @light;
     display: flex;
     flex-direction: column;
+  }
+}
+
+.features__slogan {
+  .center;
+  color: @base-color;
+  margin-top: 46px;
+  .weight(@three-hundred);
+  .size(@twenty-four);
+  .lh(@twenty-nine);
+
+  &:nth-of-type(2) {
+    margin-top: 40px;
+
+    @media (min-width: @tablet-width) {
+      text-align: center;
+      padding: 0 30px;
+      margin-top: 100px;
+    }
+
+    @media (min-width: @desktop-width) {
+      padding: 0 110px;
+      margin-top: -35px;
+      margin-bottom: 45px;
+    }
+  }
+
+  @media (min-width: @tablet-width) {
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    .size(@thirty + 10);
+    .lh(@twenty-four + 30);
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-top: 60px;
+    .weight(@three-hundred);
+    .size(@twenty-five + @twenty-five);
+    .lh(@eighteen + 50);
+  }
+}
+
+.features__list {
+  margin-top: 98px;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+
+  @media (min-width: @tablet-width) {
+    margin-top: 44px;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 2;
+    grid-column-end: 3;
+  }
+
+  @media (min-width: @desktop-width) {
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 0;
+  }
+}
+
+//
+/*
+.features__wrapper {
+  .wrapper;
+  background-color: @light;
+  background-image: url("../img/grey-background.png");
+  background-repeat: no-repeat;
+  background-position: 0 135px;
+  height: 962px;
+  position: relative;
+
+  @media (min-width: @tablet-width) {
+    display: grid;
+    grid-template-rows: 238px 51px 435px;
+    grid-template-columns: 310px 349px;
+    background: url("../img/iphonescreen3.jpg"), url("../img/iphone.png"), url("../img/grey-background-tablet.png");
+    background-size: 241px 428px, 268px 547px, auto auto;
+    background-position: 33px 303px, 20px 243px, 0 216px;
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    height: 725px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/iphonescreen3@2x.jpg"), url("../img/iphone@2x.png"), url("../img/grey-background-tablet.png");
+      background-repeat: no-repeat, no-repeat, no-repeat;
+      background-size: 241px 428px, 268px 547px, auto auto;
+      background-position: 33px 303px, 20px 243px, 0 216px;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    background-image: none, none, none;
+    background-size: 100%;
+    background-position: 0 326px;
+    height: 883px;
+    padding: 0 10px;
+    margin: 0 auto;
+    width: 940px;
+    position: relative;
   }
 }
 
@@ -42,14 +157,52 @@
   .size(@twenty-four);
   .lh(@twenty-nine);
 
-  @media (min-width: @tablet-width) {
-    grid-row-start: 1;
-    grid-row-end: 2;
-    grid-column-start: 1;
-    grid-column-end: 3;
-    margin-top: 58px;
-    .size(@thirty + 10);
-    .lh(@twenty-four + 30);
+  &:nth-of-type(1) {
+    @media (min-width: @mobile-width-only) {
+      margin-top: 39px;
+    }
+
+    @media (min-width: @tablet-width) {
+      grid-row-start: 1;
+      grid-row-end: 2;
+      grid-column-start: 1;
+      grid-column-end: 3;
+      margin-top: 47px;
+      .size(@thirty + 10);
+      .lh(@twenty-four + 30);
+    }
+
+    @media (min-width: @desktop-width) {
+      .size(@twenty-five + @twenty-five);
+      .lh(68px);
+      margin-top: 63px;
+    }
+  }
+
+  &:nth-of-type(2) {
+    @media (min-width: @mobile-width-only) {
+      margin-top: 29px;
+    }
+
+    @media (min-width: @tablet-width) {
+      grid-row-start: 1;
+      grid-row-end: 2;
+      grid-column-start: 1;
+      grid-column-end: 3;
+      margin-top: 101px;
+      padding-left: 86px;
+      padding-right: 85px;
+      .size(@thirty + 10);
+      .lh(@twenty-four + 30);
+      position: static;
+    }
+
+    @media (min-width: @desktop-width) {
+      .size(@twenty-five + @twenty-five);
+      .lh(68px);
+      margin-top: 0;
+      padding: 0 237px;
+    }
   }
 
   @media (min-width: @desktop-width) {
@@ -60,33 +213,21 @@
   }
 }
 
-.features__slogan:nth-of-type(2) {
-  @media (min-width: @tablet-width) {
-    margin-top: 113px;
-    text-align: center;
-    outline: 2px solid green;
-    outline-offset: -2px;
-    padding: 0 30px;
-  }
-
-  @media (min-width: @desktop-width) {
-    margin-top: 0;
-    padding: 0 110px;
-  }
-}
-
 .features__list {
-  margin: 0;
   padding: 0;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+  margin-top: 82px;
+  list-style: none;
 
   @media (min-width: @tablet-width) {
-    grid-row-start: 2;
-    grid-row-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 4;
     grid-column-start: 2;
     grid-column-end: 3;
+    background-image: none;
+    margin-top: 0;
   }
 
   @media (min-width: @desktop-width) {
@@ -94,3 +235,4 @@
     justify-content: space-around;
   }
 }
+*/

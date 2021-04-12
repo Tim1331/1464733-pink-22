@@ -1,5 +1,10 @@
 .quote {
   background-color: @light;
+  margin-top: -28px;
+
+  @media (min-width: @tablet-width) {
+    margin-top: 0;
+  }
 
   &__data--existence {
     display: block;

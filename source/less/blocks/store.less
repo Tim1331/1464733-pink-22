@@ -1,32 +1,33 @@
 .store {
   height: 243px;
   padding-top: 28px;
-  padding-left: 20px;
   background-color: @asphalt;
 
   @media (min-width: @tablet-width) {
-    height: 351px;
+    height: 354px;
     margin-top: -371px;
     background-color: transparent;
   }
 
   @media (min-width: @desktop-width) {
-    height: 406px;
+    height: 399px;
     background-color: transparent;
   }
 }
 
 .store__wrapper {
   .wrapper;
+  width: 87.5%;
 
   @media (min-width: @tablet-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    width: 93.94%;
   }
 
   @media (min-width: @desktop-width) {
     height: inherit;
-    width: 940px;
+    width: 78.334%;
   }
 }
 
@@ -40,34 +41,35 @@
   .weight(@seven-hundred);
   .size(@eighteen);
   .lh(@eighteen);
-  width: 203px;
+  width: 72.5%;
   height: 19px;
   padding: 15px 36px 15px 35px;
+  .center;
+
+  &:hover {
+    background-color: @light;
+    color: @varnich;
+  }
+
+  &:active {
+    background-color: @light;
+    color: fade(@varnich, 30%);
+  }
 
   @media (min-width: @tablet-width) {
-    width: 223px;
+    width: 67.785%;
     height: 19px;
     grid-column-start: 1;
     grid-column-end: 2;
     padding: 14px 34px 16px 37px;
-
-    &:hover {
-      background-color: @light;
-      color: @varnich;
-    }
-
-    &:active {
-      background-color: @light;
-      color: fade(@varnich, 30%);
-    }
   }
 
   @media (min-width: @desktop-width) {
     .size(@thirty-three - @twelve);
     height: 18px;
-    margin-left: -10px;
     color: @light;
-    padding: 16px 36px 16px 35px;
+    padding: 16px 28px 16px 27px;
+    width: 50.852%;
   }
 }
 
@@ -189,6 +191,6 @@
 
   @media (min-width: @desktop-width) {
     margin-top: -117px;
-    margin-left: -10px;
+    margin-left: -3px;
   }
 }

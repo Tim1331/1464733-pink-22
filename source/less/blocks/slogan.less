@@ -1,22 +1,17 @@
 .slogan {
-  background-color: @temporarily;
-
-  @media (min-width: @tablet-width) {
-    .wrapper;
-  }
+  background-color: none;
 }
 
 .slogan__wrapper {
   .wrapper;
-  background-color: @temporarily;
   height: inherit;
-  position: relative;
   width: 87.5%;
-  outline: 5px solid green;
-  outline-offset: -5px;
 
   @media (min-width: @tablet-width) {
     width: 93.94%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    .wrapper;
   }
 
   @media (min-width: @desktop-width) {
@@ -32,20 +27,20 @@
   .lh(@twenty-nine);
   margin: 0;
   padding: 0;
-  position: absolute;
-  top: 29px;
 
   @media (min-width: @tablet-width) {
     .size(@sixteen + @twenty-four);
     .lh(@twenty-four + @twenty-four);
-    width: 38.71%;
-    top: 102px;
-    padding: 0 30px;
+    width: 61.291%;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    padding: 0 55px;
   }
 
   @media (min-width: @desktop-width) {
     .size(@twenty-five + @twenty-five);
     .lh(@eighteen + 50);
-    top: 114px;
+    width: 63.83%;
+    padding: 0;
   }
 }

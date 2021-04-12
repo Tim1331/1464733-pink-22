@@ -2,27 +2,87 @@
   list-style: none;
   .center;
 
+  @media (min-width: @tablet-width) {
+    .left;
+  }
+
   @media (min-width: @desktop-width) {
-    width: 252px;
+    width: 31.915%;
+
+    &:first-of-type .advantages-list__picture {
+      background-image: url("../img/shadow.png"), url("../img/iphonescreen1.jpg"), url("../img/iphone1.png");
+      background-position: 0% 81%, 48% 39%, 48% 0%;
+      background-repeat: no-repeat, no-repeat, no-repeat;
+      background-size: 100% 5.5%, 54.5% 73%, 61.3% 88%;
+    }
+
+    &:nth-of-type(2) .advantages-list__picture {
+      background-image: url("../img/shadow.png"), url("../img/iphonescreen2.jpg"), url("../img/iphone1.png");
+      background-position: 0% 81%, 48% 39%, 48% 0%;
+      background-repeat: no-repeat, no-repeat, no-repeat;
+      background-size: 100% 5.5%, 54.5% 73%, 61.3% 88%;
+    }
+
+    &:last-of-type .advantages-list__picture {
+      background-image: url("../img/shadow.png"), url("../img/iphonescreen3.jpg"), url("../img/iphone1.png");
+      background-position: 0% 81%, 48% 39%, 48% 0%;
+      background-repeat: no-repeat, no-repeat, no-repeat;
+      background-size: 100% 5.5%, 54.5% 73%, 61.3% 88%;
+    }
+  }
+}
+
+.advantages-list__picture {
+  @media (min-width: @desktop-width) {
+    width: 100%;
+    height: 382px;
   }
 }
 
 .advantages-list__header {
-  .weight(@seven-hundred);
-  .size(@eighteen);
-  .lh(@twenty-four);
-  color: @dark;
+  br {
+    display: none;
+
+    @media (min-width: @desktop-width) {
+      display: block;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    .weight(@seven-hundred);
+    .size(@thirty);
+    .lh(@thirty);
+    color: @dark;
+    .center;
+    background-color: @bg-grey;
+    margin-top: -82px;
+    padding-top: 56px;
+  }
 }
 
 .advantages-list__content {
   .lh(@twenty-four);
   .center;
 
+  br {
+    display: none;
+  }
+
   @media (min-width: @tablet-width) {
     .left;
   }
 
   @media (min-width: @desktop-width) {
-    .justify;
+    .size(@eighteen);
+    .lh(@thirty);
+    margin: -30px auto;
+    width: 84%;
+    .center;
+    background-color: @bg-grey;
+    padding-top: 22px;
+
+    br {
+      display: block;
+    }
   }
 }
