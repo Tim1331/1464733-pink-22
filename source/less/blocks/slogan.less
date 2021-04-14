@@ -1,6 +1,46 @@
 .slogan {
-  background-color: none;
+  background-image: url(../img/screenmobile.jpg), url(../img/phonemobile.png), url(../img/backmobile.jpg);
+  background-repeat: no-repeat, no-repeat, no-repeat;
+  background-position: 50% 71.5%, 0% 100%, 0% 95%;
+  background-size: 34.3% 49.5%, 100% 72%, 100% 117%;
+
+  /*  @media (min-resolution: 2dppx) {
+      background-image: url("../img/screenmobile@2x.jpg"), url("../img/phonemobile@2x.png"), url("../img/backmobile@2x.jpg");
+      background-repeat: no-repeat, no-repeat, no-repeat;
+      background-position: 104px 207px, 0 174px, 0 0;
+      background-size: 111px 196px, 320px 286px, auto 460px;
+    } */
+  @media (min-width: @tablet-width) {
+    background-image: url("../img/bgscreen.jpg"), url("../img/phone.png"), url("../img/backtablet.jpg");
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-position: 78.9% 47%, 50% 100%, 0% 97%;
+    background-size: 29.1% 55.4%, 134.1% 87.9%, 100% 118%;
+  }
+
+  /*  @media (min-resolution: 2dppx) {
+      background-image: url("../img/bgscreen@2x.jpg"), url("../img/phone@2x.png"), url("../img/backtablet@2x.jpg");
+      background-repeat: no-repeat, no-repeat, no-repeat;
+      background-position: 372px 238px, -108px 183px, 0 0;
+      background-size: 193px 344px, 884px 545px, 660px 728px;
+    } */
+
+
+  @media (min-width: @desktop-width) {
+    background-image: url("../img/bgscreen.jpg"), url("../img/phone.png"), url("../img/bgimg.jpg");
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-position: 66.6% 60.3%, 50% 100%, 0% 0%;
+    background-size: 19.2% 48.3%, 88.42% 76.4%, 100% 100%;
+  }
+
+  /* @media (min-resolution: 2dppx) {
+      background-image: url("../img/bgscreen@2x.jpg"), url("../img/phone@2x.png"), url("../img/bgimg@2x.jpg");
+      background-repeat: no-repeat, no-repeat, no-repeat;
+      background-position: 717px 278px, 151px 213px, 0 0;
+      background-size: 228px 406px, 1042px 645px, 1196px 858px;
+    } */
 }
+
+
 
 .slogan__wrapper {
   .wrapper;
@@ -26,7 +66,7 @@
   .weight(@three-hundred);
   .lh(@twenty-nine);
   margin: 0;
-  padding: 0;
+  padding-top: 21px;
 
   @media (min-width: @tablet-width) {
     .size(@sixteen + @twenty-four);
@@ -34,13 +74,14 @@
     width: 61.291%;
     grid-column-start: 1;
     grid-column-end: 2;
-    padding: 0 55px;
+    padding: 92px 55px 0;
   }
 
   @media (min-width: @desktop-width) {
     .size(@twenty-five + @twenty-five);
     .lh(@eighteen + 50);
     width: 63.83%;
-    padding: 0;
+    padding-top: 210px;
+    padding-left: 0;
   }
 }
