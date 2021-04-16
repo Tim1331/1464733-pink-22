@@ -41,6 +41,32 @@
       background-position: 717px 278px, 151px 213px, 0 0;
       background-size: 228px 406px, 1042px 645px, 1196px 858px;
     } */
+
+  &--wanting-nav {
+    background-image: url("../img/screenmobile.jpg"), url("../img/phonemobile.png"), url("../img/backmobile.jpg");
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-position: 50% 78.5%, 0% 100%, 0% 0%;
+    background-size: 34.3% 42.5%, 100% 62%, 100% 117%;
+    height: 462px;
+    margin-top: -66px;
+
+    @media (min-width: @tablet-width) {
+      background-image: url("../img/bgscreen.jpg"), url("../img/phone.png"), url("../img/backtablet.jpg");
+      background-repeat: no-repeat, no-repeat, no-repeat;
+      background-position: 78.9% 63.6%, 50% 104%, 0% 0%;
+      background-size: 29.1% 47.2%, 134.1% 74.9%, 100% 118%;
+      height: 729px;
+      margin-top: -110px;
+    }
+
+    @media (min-width: @desktop-width) {
+      background-image: url("../img/bgscreen.jpg"), url("../img/phone.png"), url("../img/bgimg.jpg");
+      background-repeat: no-repeat, no-repeat, no-repeat;
+      background-position: 66.6% 60.3%, 50% 100%, 0% 0%;
+      background-size: 19.2% 48.3%, 88.42% 76.4%, 100% 100%;
+      height: 853px;
+    }
+  }
 }
 
 .slogan__wrapper {
@@ -84,5 +110,18 @@
     width: 63.83%;
     padding-top: 210px;
     padding-left: 0;
+  }
+
+  &--wanting-nav {
+    padding-top: 88px;
+
+    @media (min-width: @tablet-width) {
+      padding-top: 208px;
+    }
+
+    @media (min-width: @desktop-width) {
+      padding-top: 210px;
+      padding-left: 0;
+    }
   }
 }
