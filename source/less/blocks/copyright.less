@@ -51,10 +51,17 @@
     left: 98px;
   }
 
-
   svg {
     &:hover {
-      fill: #283645;
+      path {
+        fill: @base-color;
+      }
+    }
+
+    &:active {
+      path {
+        fill: fade(rgb(40, 54, 69), 30%);
+      }
     }
   }
 }
