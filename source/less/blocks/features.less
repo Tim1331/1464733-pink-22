@@ -1,16 +1,16 @@
 .features {
-  height: 1002px;
+  height: 989px;
   background-image: url("../img/iphonescreenmobile.jpg"), url("../img/iphone3.png"), url("../img/greybackground.png");
   background-repeat: no-repeat, no-repeat, no-repeat;
-  background-position: 50.7% 96.7%, 50% 102.8%, 0% 130px;
-  background-size: 43% 23.7%, 49% 31.9%, 100% 100%;
+  background-position: center 719px, center 684px, 0 118px;
+  background-size: 140px 249px, 157px 320px, cover;
 
   @media (min-width: @tablet-width) {
-    height: 725px;
+    height: 774px;
     background-image: url("../img/iphonescreen3tablet.jpg"), url("../img/iphone3tablet.png"), url("../img/greybackgroundtablet.png");
     background-repeat: no-repeat, no-repeat, no-repeat;
-    background-position: 9.3% 102.3%, 5.8% 137%, 0% 210px;
-    background-size: 35.6% 58.5%, 40.6% 75.4%, 100% 100%;
+    background-position: 33px 352px, 20px 293px, 0 256px;
+    background-size: 241px 425px, 268px 547px, cover;
   }
 
   @media (min-width: @desktop-width) {
@@ -44,18 +44,18 @@
 .features__slogan {
   .center;
   color: @base-color;
-  margin-top: 46px;
+  margin-top: 41px;
   .weight(@three-hundred);
   .size(@twenty-four);
   .lh(@twenty-nine);
 
   &:nth-of-type(2) {
-    margin-top: 40px;
+    margin-top: 28px;
 
     @media (min-width: @tablet-width) {
       text-align: center;
       padding: 0 30px;
-      margin-top: 100px;
+      margin-top: 150px;
     }
 
     @media (min-width: @desktop-width) {
@@ -72,6 +72,7 @@
     grid-column-end: 3;
     .size(@thirty + 10);
     .lh(@twenty-four + 30);
+    margin-top: 96px;
   }
 
   @media (min-width: @desktop-width) {

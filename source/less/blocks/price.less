@@ -1,13 +1,13 @@
 .price {
   background-image: url("../img/pricebackground.png");
   background-repeat: no-repeat;
-  background-position: 0 15%;
+  background-position: 0 -17px;
   background-size: cover;
   margin-bottom: 45px;
 
   @media (min-width: @tablet-width) {
     background-image: url("../img/price-background-tablet.png");
-    background-position: 0 -2%;
+    background-position: 0 7%;
     background-size: cover;
     height: 390px;
     margin-bottom: 42px;
@@ -51,12 +51,12 @@
     .center;
     padding-top: 4px;
     display: block;
-    margin-left: -7px;
+    margin-left: 0px;
     margin-top: -17px;
 
     @media (min-width: @tablet-width) {
-      margin-left: -2px;
-      margin-top: 0;
+      margin-left: 1px;
+      margin-top: 1px;
     }
 
     @media (min-width: @desktop-width) {
@@ -72,6 +72,8 @@
     .size(@eighteen);
     .lh(@thirty);
     display: block;
+    margin-left: 2px;
+    margin-top: -1px;
 
     @media (min-width: @desktop-width) {
       .size(@twenty-four);
@@ -81,12 +83,14 @@
 
 .price__wrapper {
   .wrapper;
-  padding-top: 113px;
+  margin: 0 auto;
+  padding-top: 110px;
   padding-bottom: 45px;
   overflow: hidden;
 
   @media (min-width: @tablet-width) {
     .wrapper;
+    padding-top: 102px;
   }
 
   @media (min-width: @desktop-width) {

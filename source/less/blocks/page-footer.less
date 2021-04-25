@@ -7,6 +7,7 @@
 
   @media (min-width: @tablet-width) {
     flex-direction: row;
+    height: 127px;
   }
 
   @media (min-width: @desktop-width) {
@@ -17,13 +18,17 @@
 }
 
 .page-footer {
+  @media (min-width: @tablet-width) {
+    margin-top: -63px;
+  }
+
   @media (min-width: @desktop-width) {
     margin-top: -102px;
   }
 }
 
 .page-footer__logo {
-  margin-top: 41px;
+  margin-top: 38px;
   display: block;
   width: 145px;
   height: 40px;
