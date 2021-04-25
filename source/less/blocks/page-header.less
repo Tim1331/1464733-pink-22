@@ -122,6 +122,24 @@
   margin-top: 21px;
   margin-left: 20px;
 
+  @media (min-width: @tablet-width) {
+    &:hover {
+      .page-header__styleguide {
+        path {
+          fill: @varnich;
+        }
+      }
+    }
+
+    &:active {
+      .page-header__styleguide {
+        path {
+          fill: fade(@light, 30%);
+        }
+      }
+    }
+  }
+
   .page-header__styleguide {
     display: none;
 
@@ -142,26 +160,6 @@
   @media (min-width: @desktop-width) {
     margin-left: 130px;
     margin-top: 27px;
-  }
-
-  &:active {
-    @media (min-width: @tablet-width) {
-      .page-header__styleguide {
-        path {
-          fill: fade(@light, 30%);
-        }
-      }
-    }
-  }
-
-  &:hover {
-    @media (min-width: @tablet-width) {
-      .page-header__styleguide {
-        path {
-          fill: @varnich;
-        }
-      }
-    }
   }
 }
 
