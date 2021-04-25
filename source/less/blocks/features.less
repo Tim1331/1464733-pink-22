@@ -5,12 +5,24 @@
   background-position: center 719px, center 684px, 0 118px;
   background-size: 140px 249px, 157px 320px, cover;
 
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/iphonescreenmobile2x.jpg"), url("../img/iphone32x.png"), url("../img/greybackground.png");
+    background-position: center 719px, center 684px, 0 118px;
+    background-size: 140px 249px, 157px 320px, cover;
+  }
+
   @media (min-width: @tablet-width) {
     height: 774px;
     background-image: url("../img/iphonescreen3tablet.jpg"), url("../img/iphone3tablet.png"), url("../img/greybackgroundtablet.png");
     background-repeat: no-repeat, no-repeat, no-repeat;
     background-position: 33px 352px, 20px 293px, 0 256px;
     background-size: 241px 425px, 268px 547px, cover;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/iphonescreen3tablet2x.jpg"), url("../img/iphone3tablet2x.png"), url("../img/greybackgroundtablet.png");
+      background-position: 33px 352px, 20px 293px, 0 256px;
+      background-size: 241px 425px, 268px 547px, cover;
+    }
   }
 
   @media (min-width: @desktop-width) {
