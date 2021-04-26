@@ -1,16 +1,64 @@
 .slogan {
-  background-color: @temporarily;
+  background-image: url("../img/screenmobile.jpg"), url("../img/phonemobile.png"), url("../img/backmobile.jpg");
+  background-repeat: no-repeat, no-repeat, no-repeat;
+  background-position: 104px 208px, 0 175px, 0 0;
+  background-size: 111px 197px, 320px 286px, cover;
+  height: 462px;
+  margin-top: -66px;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/screenmobile@2x.jpg"), url("../img/phonemobile@2x.png"), url("../img/backmobile@2x.jpg");
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-position: 104px 207px, 0 175px, 0 0;
+    background-size: 111px 196px, 320px 286px, auto 462px;
+  }
 
   @media (min-width: @tablet-width) {
-    .wrapper;
+    background-image: url("../img/bgscreen.jpg"), url("../img/phone.png"), url("../img/backtablet.jpg");
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-position: 372px 238px, -112px 183px, 0 -1px;
+    background-size: 193px 343px, 890px 545px, cover;
+    height: 728px;
+    margin-top: -110px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/bgscreen@2x.jpg"), url("../img/phone@2x.png"), url("../img/backtablet@2x.jpg");
+      background-repeat: no-repeat, no-repeat, no-repeat;
+      background-position: 372px 237px, -110px 183px, 0 0;
+      background-size: 193px 344px, 887px 545px, 660px 728px;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    background-image: url("../img/bgscreen.jpg"), url("../img/phone.png"), url("../img/bgimg.jpg");
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-position: 717px 274px, 146px 208px, 0 0;
+    background-size: 229px 406px, 1050px 645px, cover;
+    height: 853px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/bgscreen@2x.jpg"), url("../img/phone@2x.png"), url("../img/bgimg@2x.jpg");
+      background-position: 717px 273px, 149px 208px, 0 -1px;
+      background-size: 228px 406px, 1045px 644px, 1196px 858px;
+    }
   }
 }
 
 .slogan__wrapper {
   .wrapper;
-  background-color: @temporarily;
   height: inherit;
-  position: relative;
+  width: 87.5%;
+
+  @media (min-width: @tablet-width) {
+    width: 93.94%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    .wrapper;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 78.334%;
+  }
 }
 
 .slogan__leed {
@@ -20,21 +68,23 @@
   .weight(@three-hundred);
   .lh(@twenty-nine);
   margin: 0;
-  padding: 0;
-  position: absolute;
-  top: 29px;
+  padding-top: 88px;
+
 
   @media (min-width: @tablet-width) {
     .size(@sixteen + @twenty-four);
     .lh(@twenty-four + @twenty-four);
-    width: 300px;
-    position: absolute;
-    top: 102px;
+    width: 61.291%;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    padding: 203px 55px 0;
   }
 
   @media (min-width: @desktop-width) {
     .size(@twenty-five + @twenty-five);
     .lh(@eighteen + 50);
-    top: 114px;
+    width: 63.83%;
+    padding-top: 210px;
+    padding-left: 0;
   }
 }

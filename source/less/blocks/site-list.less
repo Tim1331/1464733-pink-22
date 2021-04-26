@@ -3,19 +3,28 @@
   .lh(@thirty-two);
   color: @light;
   list-style: none;
+  border-top: 1px solid @dark;
+
+  @media (min-width: @desktop-width) {
+    border-top: 0;
+    margin-right: 130px;
+  }
 }
 
 .site-list__item {
-  background-color: @base-color;
-  border-top: 2px solid @light;
+  background-color: #283645;
+  border-top: 1px solid #636e79;
+  border-bottom: 1px solid #000000;
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 25px 0;
+  height: 12px;
 
   @media (min-width: @desktop-width) {
     border: 0;
     padding: 0;
+    background-color: transparent;
   }
 }
 
@@ -29,4 +38,25 @@
   color: @light;
   text-decoration: none;
   .uppercase;
+  .weight(@seven-hundred);
+  background-color: transparent;
+
+  &:hover {
+    color: @varnich;
+  }
+
+  &:active {
+    color: fade(@varnich, 30%);
+  }
+
+  @media (min-width: @desktop-width) {
+    text-transform: none;
+    .weight(@four-hundred);
+    padding-bottom: 3px;
+    padding-left: 1px;
+
+    &--current {
+      border-bottom: 2px solid @light;
+    }
+  }
 }

@@ -1,0 +1,32 @@
+.price-points {
+  margin-top: 35px;
+  margin-left: 129px;
+
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: none;
+  }
+}
+
+.price-points__point {
+  width: 6px;
+  height: 6px;
+  display: inline-block;
+  background-color: fade(@base-color, 30%);
+  border-radius: 50%;
+  margin-right: 15px;
+  vertical-align: middle;
+  margin-top: 1px;
+
+  &:last-of-type {
+    margin-right: 0;
+  }
+
+  &--current {
+    border: 3px solid @base-color;
+    border-radius: 50%;
+  }
+}

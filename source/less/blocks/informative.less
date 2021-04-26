@@ -8,7 +8,7 @@
   }
 
   @media (min-width: @desktop-width) {
-    height: 429px;
+    height: 467px;
     background-color: @bg-grey;
   }
 }
@@ -16,14 +16,23 @@
 .informative__wrapper {
   @media (min-width: @tablet-width) {
     height: inherit;
+    width: 93.94%;
+    .wrapper;
     display: grid;
-    grid-template-columns: 320px 320px;
+    grid-template-columns: 50% 50%;
+    background-image: url("../img/twentyfour.svg"), url("../img/diagramfill.svg"), url("../img/timer.svg");
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-position: 67px 175px, 18px 110px, 0 54px;
   }
 
   @media (min-width: @desktop-width) {
     .wrapper;
     background-color: @bg-grey;
-    grid-template-columns: 369px 591px;
+    grid-template-columns: 39.255% 60.745%;
+    width: 78.334%;
+    margin-top: -46px;
+    background-size: 133px 94px, 253px 253px, 298px 345px;
+    background-position: 84px 203px, 23px 124px, 0 55px;
   }
 }
 
@@ -39,23 +48,56 @@
     .size(@thirty);
     .lh(@thirty + 3);
     .weight(@seven-hundred);
+    color: @dark;
+    margin-top: 97px;
+    margin-bottom: 0;
+
+    br {
+      display: block;
+    }
   }
 
   @media (min-width: @desktop-width) {
     .size(@thirty);
     .lh(@thirty);
     .weight(@seven-hundred);
+    margin-top: 150px;
+    margin-bottom: 26px;
+    padding-left: 1px;
+
+    br {
+      display: none;
+    }
   }
 }
 
 .informative__news {
   @media (min-width: @tablet-width) {
     .lh(@twenty-four);
+    margin-top: 15px;
+
+    br {
+      display: none;
+    }
+  }
+
+  .informative__string {
+    @media (min-width: @tablet-width) {
+      display: block;
+    }
+
+    @media (min-width: @desktop-width) {
+      display: none;
+    }
   }
 
   @media (min-width: @desktop-width) {
     .size(@eighteen);
     .lh(@thirty);
+
+    br {
+      display: block;
+    }
   }
 }
 
@@ -63,10 +105,13 @@
   @media (min-width: @tablet-width) {
     .lh(@twenty-four);
     color: @varnich;
+    display: block;
+    margin-top: -4px;
   }
 
   @media (min-width: @desktop-width) {
     .size(@eighteen);
     .lh(@thirty);
+    margin-top: 30px;
   }
 }
