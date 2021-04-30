@@ -1,8 +1,27 @@
 .offer {
   .center;
   .lh(@thirty);
+  margin: 0;
+
+  span {
+    display: none;
+
+    @media (min-width: @tablet-width) {
+      display: block;
+    }
+
+    @media (min-width: @desktop-width) {
+      display: inline;
+    }
+  }
 
   @media (min-width: @tablet-width) {
     .size(@eighteen);
+    width: 79.032%;
+    .wrapper;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 80.43%;
   }
 }
