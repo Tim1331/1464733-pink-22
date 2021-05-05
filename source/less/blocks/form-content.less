@@ -141,18 +141,27 @@
     margin-bottom: 23px;
     position: relative;
     display: block;
+  }
 
-    &::before {
+  &::before {
+    @media (min-width: @tablet-width) {
       content: "";
       width: 59px;
       height: 59px;
       background-color: @border-form;
       position: absolute;
-      top: -247%;
-      left: 83.77%;
+      top: -236%;
+      left: 80.2%;
     }
 
-    &::after {
+    @media (min-width: @desktop-width) {
+      top: -246%;
+      left: 84.2%;
+    }
+  }
+
+  &::after {
+    @media (min-width: @tablet-width) {
       content: "";
       width: 20px;
       height: 19px;
@@ -160,18 +169,23 @@
       background-repeat: no-repeat;
       position: absolute;
       top: -170%;
-      left: 89.2%;
+      left: 83.5%;
+    }
+
+    @media (min-width: @desktop-width) {
+      top: -170%;
+      left: 89.5%;
     }
   }
 
   @media (min-width: @desktop-width) {
     order: 3;
     margin-left: 0;
-    padding-left: 22px;
+    padding-left: 2.451%;
     margin-bottom: 0;
     margin-top: 13px;
-    margin-right: 74px;
-    width: 42.77%;
+    margin-right: 9.07%;
+    width: 43.015%;
   }
 }
 
@@ -187,18 +201,27 @@
     order: 4;
     margin-top: 0;
     position: relative;
+  }
 
-    &::before {
+  &::before {
+    @media (min-width: @tablet-width) {
       content: "";
       width: 59px;
       height: 59px;
       background-color: @border-form;
       position: absolute;
-      top: -247%;
-      left: 83.77%;
+      top: -236%;
+      left: 80.2%;
     }
 
-    &::after {
+    @media (min-width: @desktop-width) {
+      top: -246%;
+      left: 84.2%;
+    }
+  }
+
+  &::after {
+    @media (min-width: @tablet-width) {
       content: "";
       width: 20px;
       height: 19px;
@@ -206,15 +229,20 @@
       background-repeat: no-repeat;
       position: absolute;
       top: -160%;
-      right: 5.5%;
+      left: 83.55%;
+    }
+
+    @media (min-width: @desktop-width) {
+      top: -160%;
+      left: 91%;
     }
   }
 
   @media (min-width: @desktop-width) {
     order: 4;
     margin-top: 13px;
-    padding-left: 22px;
-    width: 42.77%;
+    padding-left: 2.451%;
+    width: 43.015%;
   }
 }
 
