@@ -42,7 +42,9 @@
   background-color: transparent;
 
   &--underline {
-    border-bottom: 2px solid @light;
+    @media (min-width: @desktop-width) {
+      border-bottom: 2px solid @light;
+    }
   }
 
   &:hover {
