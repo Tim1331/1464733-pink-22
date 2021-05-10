@@ -8,15 +8,35 @@
   background-repeat: no-repeat;
   background-size: cover;
 
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/backmobile@2x.jpg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: auto 462px;
+  }
+
   @media (min-width: @tablet-width) {
     height: 440px;
     margin-top: -110px;
     background-image: url("../img/backtablet.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/backtablet@2x.jpg");
+      background-repeat: no-repeat;
+      background-position: 0 0;
+      background-size: 660px 728px;
+    }
   }
 
   @media (min-width: @desktop-width) {
     height: 394px;
     background-image: url("../img/bgimg.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/bgimg@2x.jpg");
+      background-position: 0 -1px;
+      background-size: 1196px 858px;
+    }
   }
 }
 

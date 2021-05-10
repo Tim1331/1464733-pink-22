@@ -1,12 +1,84 @@
 .modal-failure {
   display: none;
-  padding-left: 20px;
-  padding-right: 20px;
   .center;
   .lh(@twenty-four);
+  .wrapper;
+  position: fixed;
+  top: 5%;
+  height: 289px;
+  background-color: @light;
+  box-shadow: 0 7px 15px @shadow;
+
+  @media (min-width: @tablet-width) {
+    width: 50%;
+    left: 15%;
+    height: 260px;
+    padding: 49px 65px 54px 65px;
+    .size(@eighteen);
+    border-radius: 5px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 54.167%;
+    left: 17.4%;
+    background-image: linear-gradient(to bottom, @light 216px, @border-form 216px, @border-form 161px);
+  }
 }
 
 .modal-failure__header {
   color: @dark;
   .size(@eighteen);
+  .lh(@twenty-four);
+  .weight(@seven-hundred);
+  margin-top: 38px;
+
+  @media (min-width: @tablet-width) {
+    .size(@thirty);
+    .lh(@thirty + 10);
+    width: 71.74%;
+    margin: -6px auto;
+    margin-bottom: 23px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 23px;
+  }
+}
+
+.modal-failure__message {
+  margin-bottom: 10px;
+
+  @media (min-width: @tablet-width) {
+    margin: 0 auto;
+    padding: 0;
+    width: 106.061%;
+    margin-bottom: -15px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: 0 auto;
+    padding: 0;
+    width: 54%;
+    margin-bottom: 69px;
+  }
+}
+
+.modal-failure__button {
+  border-radius: 4px;
+  margin: 48px auto;
+  .size(@eighteen);
+  .lh(@thirty);
+  text-decoration: none;
+  text-transform: uppercase;
+  .weight(@seven-hundred);
+  background-color: @button-fill;
+  color: @light;
+  padding: 16px 47px 17px 47px;
+  width: 276px;
+  height: 59px;
+  border-width: 0;
+
+  @media (min-width: @tablet-width) {
+    width: 296px;
+  }
 }
