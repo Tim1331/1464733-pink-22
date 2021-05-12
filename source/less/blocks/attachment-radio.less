@@ -1,8 +1,106 @@
 .attachment-radio {
   background-color: @bg-grey;
+
+  &:checked {
+    &:hover {
+      border: 2px solid @base-color;
+    }
+
+    &:active {
+      border: 2px solid @varnich;
+    }
+  }
 }
 
 .attachment-radio__label {
   .size(@eighteen);
   .lh(@thirty);
+  padding-left: 70px;
+  display: block;
+  position: relative;
+
+  @media (min-width: @tablet-width) {
+    padding-left: 119px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-left: 0;
+  }
+
+  &::before {
+    content: "";
+    width: 40.5px;
+    height: 40.5px;
+    position: absolute;
+    top: -5px;
+    left: 0;
+    box-sizing: border-box;
+    border: 2px solid @border-form;
+    border-radius: 50px;
+    background-color: @light;
+
+    @media (min-width: @tablet-width) {
+      left: 58px;
+    }
+
+    @media (min-width: @desktop-width) {
+      top: -5px;
+      left: 72.5px;
+    }
+  }
+
+  &:first-of-type {
+    margin-top: -4px;
+
+    @media (min-width: @tablet-width) {
+      margin-top: 5px;
+    }
+
+    @media (min-width: @desktop-width) {
+      margin-top: 18px;
+      padding-left: 133px;
+    }
+  }
+
+  &:not(:first-of-type) {
+    margin-top: 45px;
+
+    @media (min-width: @desktop-width) {
+      margin-top: 46px;
+      padding-left: 133px;
+    }
+  }
+
+  &:hover {
+    &::before {
+      border: 2px solid @base-color;
+    }
+  }
+
+  &:active {
+    &::before {
+      border: 2px solid @varnich;
+    }
+  }
+}
+
+.attachment-radio:checked + .attachment-radio__label::after {
+  content: "";
+  box-sizing: border-box;
+  width: 15px;
+  height: 15px;
+  border-radius: 50px;
+  background-color: @varnich;
+  position: absolute;
+  top: 8px;
+  left: 13px;
+
+  @media (min-width: @tablet-width) {
+    left: 71px;
+  }
+
+  @media (min-width: @desktop-width) {
+    top: 8px;
+    left: 85px;
+  }
 }

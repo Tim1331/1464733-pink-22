@@ -41,6 +41,12 @@
   .weight(@seven-hundred);
   background-color: transparent;
 
+  &--underline {
+    @media (min-width: @desktop-width) {
+      border-bottom: 2px solid @light;
+    }
+  }
+
   &:hover {
     color: @varnich;
   }

@@ -1,36 +1,156 @@
-.crazy-checkbox {
-  background-color: @bg-grey;
-}
-
 .crazy-checkbox__label {
   .size(@eighteen);
   .lh(@thirty);
+  position: relative;
+  display: block;
+  cursor: pointer;
+  user-select: none;
+  padding-left: 59px;
+  height: 39px;
+  margin-bottom: 43px;
+
+  @media (min-width: @tablet-width) {
+    padding-left: 117px;
+    margin-top: 4px;
+    margin-bottom: 40px;
+  }
 
   @media (min-width: @desktop-width) {
-    margin-left: 137px;
+    margin-left: 0;
 
     &:first-of-type {
       order: -5;
+      padding-left: 117px;
+      margin-top: 17px;
     }
 
     &:nth-of-type(2) {
       order: -2;
+      margin-top: 3px;
     }
 
     &:nth-of-type(3) {
       order: -4;
+      padding-left: 116px;
+      margin-top: 17px;
+
+      &::before {
+        left: 57px;
+      }
     }
 
     &:nth-of-type(4) {
       order: -1;
+      padding-left: 154px;
+
+      &::before {
+        left: 96px;
+        top: -4px;
+      }
     }
 
     &:nth-of-type(5) {
       order: -3;
+      padding-left: 113px;
+      margin-top: 17px;
+
+
+      &::before {
+        left: 55px;
+      }
     }
 
     &:last-of-type {
       order: 0;
+
+      &::before {
+        left: 65px;
+        top: -4px;
+      }
+    }
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -4px;
+    left: 0;
+    width: 39px;
+    height: 39px;
+    border: 2px solid @border-form;
+    border-radius: 2px;
+    box-sizing: border-box;
+    background-color: @light;
+
+    @media (min-width: @tablet-width) {
+      left: 58px;
+      top: -3px;
+    }
+
+    @media (min-width: @desktop-width) {
+      left: 58px;
+    }
+  }
+
+  &:hover {
+    &::before {
+      border: 2px solid @base-color;
+    }
+  }
+
+  &:active {
+    &::before {
+      border: 2px solid @varnich;
+    }
+  }
+
+  &:last-of-type {
+    margin-bottom: 38px;
+    padding-left: 59px;
+
+    @media (min-width: @tablet-width) {
+      margin-bottom: 37px;
+      padding-left: 117px;
+      margin-top: 1px;
+    }
+
+    @media (min-width: @desktop-width) {
+      margin-top: 4px;
+      padding-left: 124px;
+    }
+  }
+}
+
+.crazy-checkbox {
+  &:checked + .crazy-checkbox__label::after {
+    content: "";
+    width: 22px;
+    height: 16px;
+    background-image: url("../img/tick.svg");
+    position: absolute;
+    top: 7px;
+    left: 9px;
+
+    @media (min-width: @tablet-width) {
+      left: 67px;
+      top: 8px;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    &:checked + .crazy-checkbox__label:nth-of-type(5)::after {
+      left: 65px;
+      top: 8px;
+    }
+
+    &:checked + .crazy-checkbox__label:nth-of-type(4)::after {
+      left: 105px;
+      top: 8px;
+    }
+
+    &:checked + .crazy-checkbox__label:last-of-type::after {
+      left: 75px;
+      top: 8px;
     }
   }
 }

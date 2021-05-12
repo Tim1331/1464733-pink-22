@@ -7,26 +7,86 @@
     color: @base-color;
   }
 
-  width: 95.715%;
-  padding: 0;
+  padding: 3px 0 0 7.1%;
+  border: 2px solid @border-form;
+  border-radius: 2px;
+  margin-top: 5px;
+  height: 56px;
 
   @media (min-width: @tablet-width) {
-    width: 78.3%;
+    padding: 3px 0 0 3.1%;
   }
 
   @media (min-width: @desktop-width) {
-    width: 76.674%;
+    padding: 3px 0 0 4.455%;
+  }
 
-    &--info {
-      width: 44.976%;
+  &--surname {
+    @media (min-width: @tablet-width) {
+      width: 80.86%;
+      margin-left: 95px;
+      margin-top: -48px;
+    }
+
+    @media (min-width: @desktop-width) {
+      margin-left: 95px;
+      margin-top: -48px;
+    }
+  }
+
+  &--name {
+    @media (min-width: @tablet-width) {
+      margin-top: 52px;
+      margin-left: 19px;
+      width: 87.35%;
+    }
+
+    @media (min-width: @desktop-width) {
+      margin-top: -48px;
+      margin-left: 55px;
+    }
+  }
+
+  &--patronymic {
+    @media (min-width: @tablet-width) {
+      width: 80.8%;
+      margin-left: 19px;
+      margin-top: 52px;
+    }
+
+    @media (min-width: @desktop-width) {
+      margin-left: 95px;
+      margin-top: -48px;
+    }
+  }
+
+  &--info {
+    @media (min-width: @tablet-width) {
+      width: 77.777%;
+      margin-left: 58px;
+      margin-bottom: 10px;
 
       &:first-of-type {
-        order: -3;
-        margin-right: 70px;
+        order: 1;
       }
 
       &:last-of-type {
-        order: -2;
+        order: 2;
+      }
+    }
+
+    @media (min-width: @desktop-width) {
+      width: 349px;
+      margin: 0;
+      padding: 3px 0 0 18px;
+      border-radius: 2px;
+
+      &:first-of-type {
+        order: 1;
+        margin-right: 9.07%;
+        padding: 3px 0 0 20px;
+        width: 347px;
+        border-radius: 2px;
       }
     }
   }
