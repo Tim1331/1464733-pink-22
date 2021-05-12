@@ -29,19 +29,19 @@
 
 .quote__wrapper {
   .wrapper;
-  width: 87.5%;
+  width: @size-for-mobile;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   position: relative;
 
   @media (min-width: @tablet-width) {
-    width: 93.94%;
+    width: @size-for-tablet;
     justify-content: flex-start;
   }
 
   @media (min-width: @desktop-width) {
-    width: 78.334%;
+    width: @size-for-desktop;
     background-image: url("../img/quotes.svg");
     background-repeat: no-repeat;
     background-position: center 23.5%;

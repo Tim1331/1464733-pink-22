@@ -18,17 +18,17 @@
 
 .store__wrapper {
   .wrapper;
-  width: 87.5%;
+  width: @size-for-mobile;
 
   @media (min-width: @tablet-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    width: 93.94%;
+    width: @size-for-tablet;
   }
 
   @media (min-width: @desktop-width) {
     height: inherit;
-    width: 78.334%;
+    width: @size-for-desktop;
   }
 }
 

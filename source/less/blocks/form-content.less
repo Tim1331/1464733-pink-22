@@ -22,6 +22,10 @@
   flex-direction: column;
   justify-content: space-around;
 
+  @media (min-width: @tablet-width) {
+    position: relative;
+  }
+
   @media (min-width: @desktop-width) {
     flex-direction: row;
     justify-content: space-between;
@@ -34,7 +38,7 @@
   display: flex;
   flex-direction: column;
   .wrapper;
-  width: 87.5%;
+  width: @size-for-mobile;
   padding-bottom: 41px;
 
   @media (min-width: @tablet-width) {
@@ -45,11 +49,11 @@
   }
 
   @media (min-width: @desktop-width) {
-    width: 36.25%;
+    width: 46.25%;
     padding: 0;
-    margin-left: 10.83%;
-    margin-right: 69px;
-    margin-top: 0;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: -2px;
     margin-bottom: 0;
   }
 }
@@ -82,9 +86,9 @@
   }
 
   @media (min-width: @desktop-width) {
-    width: 45.852%;
+    width: 46.23%;
     padding-top: 0;
-    margin-right: 15px;
+    margin-right: 0;
     margin-top: 72px;
   }
 }
@@ -103,15 +107,15 @@
 }
 
 .form-content__crazy-travel {
+  width: @size-for-mobile;
   display: flex;
   flex-direction: column;
   padding: 0;
   border: 0;
   .wrapper;
-  width: 87.5%;
 
   @media (min-width: @tablet-width) {
-    width: 93.94%;
+    width: @size-for-tablet;
     box-sizing: border-box;
     border: 2px solid @border-form;
     border-radius: 2px;
@@ -119,35 +123,37 @@
   }
 
   @media (min-width: @desktop-width) {
+    width: 100%;
     flex-direction: row;
     flex-wrap: wrap;
-    width: 78.334%;
     box-sizing: border-box;
     padding-bottom: 11px;
   }
 }
 
 .form-content__user-data {
+  width: @size-for-mobile;
   display: flex;
   flex-direction: column;
   padding: 0;
   border: 0;
   .wrapper;
-  width: 87.5%;
 
   @media (min-width: @tablet-width) {
+    width: @size-for-tablet;
     border: 2px solid @border-form;
     border-radius: 2px;
     box-sizing: border-box;
-    width: 93.94%;
     padding-bottom: 27px;
   }
 
   @media (min-width: @desktop-width) {
+    width: 100%;
     padding: 5px 62px 13px 58px;
     flex-direction: row;
     flex-wrap: wrap;
-    width: 78.334%;
+    margin: 0;
+    justify-content: space-between;
   }
 }
 
@@ -177,8 +183,8 @@
     }
 
     @media (min-width: @desktop-width) {
-      top: -235.2%;
-      left: 84.36%;
+      top: -71px;
+      left: 313px;
     }
   }
 
@@ -195,18 +201,17 @@
     }
 
     @media (min-width: @desktop-width) {
-      top: -169%;
-      left: 90%;
+      top: -51px;
+      left: 334px;
     }
   }
 
   @media (min-width: @desktop-width) {
     order: 3;
     margin-left: 0;
-    padding-left: 2.451%;
+    padding-left: 20px;
     margin-bottom: 0;
     margin-top: 10px;
-    margin-right: 9.07%;
     width: 43.015%;
   }
 }
@@ -237,8 +242,9 @@
     }
 
     @media (min-width: @desktop-width) {
-      top: -238%;
-      left: 84.5%;
+      top: -71px;
+      left: 371px;
+      border-radius: 2px;
     }
   }
 
@@ -255,38 +261,38 @@
     }
 
     @media (min-width: @desktop-width) {
-      top: -160%;
-      left: 90.2%;
+      top: -48px;
+      left: 392px;
     }
   }
 
   @media (min-width: @desktop-width) {
     order: 4;
     margin-top: 10px;
-    padding-left: 2.451%;
-    width: 43.015%;
+    width: 351px;
   }
 }
 
 .form-content__attachment-travel {
+  width: @size-for-mobile;
   display: flex;
   flex-direction: column;
   padding: 0;
-  margin: 0;
+  .wrapper;
   border: 0;
 
   @media (min-width: @tablet-width) {
+    width: @size-for-tablet;
+    padding-bottom: 58px;
     border: 2px solid @border-form;
     border-radius: 2px;
     box-sizing: border-box;
-    width: 93.94%;
     .wrapper;
-    padding-bottom: 58px;
   }
 
   @media (min-width: @desktop-width) {
     margin: 0;
-    width: 78.88%;
+    width: 100%;
     padding-bottom: 58px;
   }
 }
@@ -305,7 +311,7 @@
   }
 
   @media (min-width: @desktop-width) {
-    margin-top: 54px;
+    margin-top: 59px;
   }
 }
 
@@ -432,7 +438,7 @@
 
   @media (min-width: @desktop-width) {
     padding: 44px 60px 45px 60px;
-    width: 78.334%;
+    width: 100%;
   }
 }
 
@@ -459,7 +465,7 @@
 
   @media (min-width: @desktop-width) {
     margin-top: 65px;
-    margin-left: 130px;
+    margin-left: 0;
   }
 
   &:hover {
@@ -484,7 +490,7 @@
 
   @media (min-width: @tablet-width) {
     position: absolute;
-    top: 3057px;
+    bottom: 50px;
     left: 69.3%;
   }
 
@@ -518,8 +524,8 @@
   @media (min-width: @desktop-width) {
     display: block;
     position: absolute;
-    right: 130px;
-    top: 1799px;
+    right: 0;
+    bottom: 50px;
     text-transform: uppercase;
     .lh(@thirty);
     .center;
