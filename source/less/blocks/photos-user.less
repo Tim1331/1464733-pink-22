@@ -14,21 +14,43 @@
 }
 
 .photos-user__apple {
-  margin: 0;
-  margin-top: 54px;
   .center;
   .lh(@thirty);
-}
-
-.photos-user__apple:last-of-type {
-  margin-top: 0;
-  margin-bottom: 52px;
+  display: block;
 
   @media (min-width: @tablet-width) {
-    margin-bottom: 78px;
+    display: inline-block;
+    .size(@eighteen);
+    margin-top: 45px;
   }
 
   @media (min-width: @desktop-width) {
-    margin-bottom: 75px;
+    display: block;
+  }
+
+  &:first-of-type {
+    margin-top: 20px;
+    margin-bottom: -13px;
+
+    @media (min-width: @tablet-width) {
+      margin-top: 45px;
+      margin-bottom: -45px;
+    }
+
+    @media (min-width: @desktop-width) {
+      margin-top: 100px;
+    }
+  }
+
+  &:last-of-type {
+    margin-bottom: 52px;
+
+    @media (min-width: @tablet-width) {
+      margin-bottom: 78px;
+    }
+
+    @media (min-width: @desktop-width) {
+      margin-bottom: 75px;
+    }
   }
 }

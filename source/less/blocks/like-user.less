@@ -3,4 +3,60 @@
   .uppercase;
   .size(@twelve);
   .lh(@twenty-four);
+  display: block;
+  margin-top: -2px;
+  margin-left: 30px;
+
+  @media (min-width: @tablet-width) {
+    position: relative;
+    bottom: 87px;
+    left: 411px;
+  }
+
+  @media (min-width: @desktop-width) {
+    left: 748px;
+  }
+
+  &--no-mobile {
+    position: absolute;
+    display: block;
+
+    @media (min-width: @tablet-width) {
+      bottom: 24px;
+      left: 2px;
+    }
+  }
+}
+
+.like-user__icon {
+  position: relative;
+
+  @media (min-width: @tablet-width) {
+    bottom: 87px;
+    left: 556px;
+  }
+
+  @media (min-width: @desktop-width) {
+    left: 879px;
+  }
+
+  &::before {
+    content: "";
+    width: 13px;
+    height: 12px;
+    position: absolute;
+    top: 5px;
+    left: 0;
+    background-image: url("../img/heart.svg");
+    background-repeat: no-repeat;
+  }
+
+  &--no-mobile {
+    position: absolute;
+
+    @media (min-width: @tablet-width) {
+      bottom: 50px;
+      left: 240px;
+    }
+  }
 }

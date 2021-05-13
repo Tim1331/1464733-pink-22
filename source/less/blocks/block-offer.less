@@ -18,3 +18,45 @@
     }
   }
 }
+
+.block-offer__apple {
+  .center;
+  .lh(@thirty);
+  display: block;
+
+  @media (min-width: @tablet-width) {
+    display: inline-block;
+    .size(@eighteen);
+    margin-top: 45px;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: block;
+  }
+
+  &:first-of-type {
+    margin-top: 20px;
+    margin-bottom: -13px;
+
+    @media (min-width: @tablet-width) {
+      margin-top: 45px;
+      margin-bottom: -45px;
+    }
+
+    @media (min-width: @desktop-width) {
+      margin-top: 100px;
+    }
+  }
+
+  &:last-of-type {
+    margin-bottom: 52px;
+
+    @media (min-width: @tablet-width) {
+      margin-bottom: 78px;
+    }
+
+    @media (min-width: @desktop-width) {
+      margin-bottom: 75px;
+    }
+  }
+}

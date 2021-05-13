@@ -2,6 +2,13 @@
   background-color: @bg-grey;
   display: flex;
   flex-direction: column;
+  background-image: url("../img/iconline.png");
+  background-repeat: no-repeat;
+  background-position: 0 555px;
+
+  @media (min-width: @tablet-width) {
+    background-image: none;
+  }
 
   @media (min-width: @desktop-width) {
     flex-direction: row;
@@ -27,24 +34,6 @@
     .wrapper;
     padding-left: 0;
     padding-right: 0;
-  }
-}
-
-.photo-filter__block {
-  width: 280px;
-  height: 305px;
-  outline: 2px solid orange;
-  outline-offset: -2px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-
-  @media (min-width: @tablet-width) {
-    width: 275px;
-  }
-
-  @media (min-width: @desktop-width) {
-    width: 410px;
-    margin-right: 60px;
+    height: 457px;
   }
 }

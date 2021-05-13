@@ -31,16 +31,17 @@
 .user-history__item:not(:first-of-type) .user-history__one {
   list-style: none;
   width: 253px;
+  height: 119px;
+  padding-bottom: 0;
 
   @media (min-width: @tablet-width) {
     width: 273px;
-    height: 104px;
+    height: 130px;
+    padding-bottom: 0;
   }
 }
 
 .user-history__photo {
-  outline: 2px solid green;
-  outline-offset: -2px;
   height: 180px;
 
   @media (min-width: @tablet-width) {
@@ -59,11 +60,7 @@
   }
 }
 
-.user-history__item:not(:first-of-type):not(:nth-of-type(4)):not(:nth-of-type(3n + 4)) {
-  @media (min-width: @tablet-width) {
-    margin-right: 0;
-  }
-
+.user-history__item:not(:first-of-type):not(:nth-of-type(4)):not(:nth-of-type(3n + 4)) .user-history__photo {
   @media (min-width: @desktop-width) {
     margin-right: 20px;
   }
@@ -77,6 +74,7 @@
   padding-bottom: 26px;
   margin: 0;
   height: 141px;
+  position: relative;
 }
 
 .user-history__cite {
@@ -85,9 +83,37 @@
   .weight(@three-hundred);
   .size(@twelve);
   .lh(@twenty-four);
+  display: block;
+  margin-top: -4px;
+
+  @media (min-width: @tablet-width) {
+    margin-top: -1px;
+    margin-left: 15px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-top: 3px;
+    margin-left: 0;
+  }
 }
 
 .user-history__name {
   .weight(@seven-hundred);
   .lh(@twenty-four);
+  .size(@fourteen);
+  .weight(@seven-hundred);
+  text-transform: none;
+}
+
+.user-history__message {
+  margin-top: 4px;
+  .lh(@twenty-four);
+
+  @media (min-width: @tablet-width) {
+    margin-left: 15px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-left: 0;
+  }
 }
