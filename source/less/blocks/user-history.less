@@ -10,10 +10,18 @@
 .user-history__item:first-of-type {
   display: flex;
   flex-direction: column;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 50px;
+  }
 }
 
 .user-history__item {
   margin-bottom: 20px;
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 54px;
+  }
 }
 
 .user-history__item:first-of-type .user-history__one {
@@ -25,19 +33,43 @@
 
   @media (min-width: @desktop-width) {
     width: 913px;
+    height: 45px;
   }
 }
 
 .user-history__item:not(:first-of-type) .user-history__one {
   list-style: none;
   width: 253px;
-  height: 119px;
+  height: 118px;
   padding-bottom: 0;
 
   @media (min-width: @tablet-width) {
     width: 273px;
     height: 130px;
     padding-bottom: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-top: 100px;
+  }
+}
+
+.user-history__item:nth-of-type(3) .user-history__one,
+.user-history__item:nth-of-type(5) .user-history__one,
+.user-history__item:nth-of-type(6) .user-history__one,
+.user-history__item:nth-of-type(7) .user-history__one {
+  height: 96px;
+
+  @media (min-width: @tablet-width) {
+    height: 130px;
+  }
+}
+
+.user-history__item:nth-of-type(4) .user-history__one {
+  height: 119px;
+
+  @media (min-width: @tablet-width) {
+    height: 130px;
   }
 }
 
@@ -75,6 +107,10 @@
   margin: 0;
   height: 141px;
   position: relative;
+
+  @media (min-width: @tablet-width) {
+    height: 70px;
+  }
 }
 
 .user-history__cite {
@@ -84,7 +120,7 @@
   .size(@twelve);
   .lh(@twenty-four);
   display: block;
-  margin-top: -4px;
+  margin-top: -7px;
 
   @media (min-width: @tablet-width) {
     margin-top: -1px;
@@ -92,7 +128,7 @@
   }
 
   @media (min-width: @desktop-width) {
-    margin-top: 3px;
+    margin-top: -1px;
     margin-left: 0;
   }
 }
@@ -103,17 +139,29 @@
   .size(@fourteen);
   .weight(@seven-hundred);
   text-transform: none;
-}
-
-.user-history__message {
-  margin-top: 4px;
-  .lh(@twenty-four);
 
   @media (min-width: @tablet-width) {
-    margin-left: 15px;
+    padding-left: 0;
   }
 
   @media (min-width: @desktop-width) {
-    margin-left: 0;
+    padding-left: 10px;
+  }
+}
+
+.user-history__message {
+  margin-top: 0;
+  .lh(@twenty-four);
+
+  @media (min-width: @tablet-width) {
+    margin-left: 13px;
+
+    br {
+      display: none;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-left: 10px;
   }
 }

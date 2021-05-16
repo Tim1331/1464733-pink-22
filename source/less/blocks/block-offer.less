@@ -1,9 +1,19 @@
 .block-offer {
   margin: 0;
-  margin-top: 54px;
+  margin-top: 44px;
+  margin-bottom: 50px;
   .center;
   .lh(@thirty);
-  .size(@eighteen);
+  .size(@fourteen);
+
+  @media (min-width: @tablet-width) {
+    margin-top: 90px;
+    margin-bottom: 78px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 90px;
+  }
 
   &:last-of-type {
     margin-top: 0;
@@ -23,40 +33,27 @@
   .center;
   .lh(@thirty);
   display: block;
+  width: @size-for-mobile;
+  .wrapper;
+
+  br {
+    display: block;
+
+    @media (min-width: @tablet-width) {
+      display: none;
+    }
+  }
 
   @media (min-width: @tablet-width) {
-    display: inline-block;
     .size(@eighteen);
     margin-top: 45px;
+    width: 72.728%;
+    padding: 0 90px;
+    box-sizing: content-box;
   }
 
   @media (min-width: @desktop-width) {
     display: block;
-  }
-
-  &:first-of-type {
-    margin-top: 20px;
-    margin-bottom: -13px;
-
-    @media (min-width: @tablet-width) {
-      margin-top: 45px;
-      margin-bottom: -45px;
-    }
-
-    @media (min-width: @desktop-width) {
-      margin-top: 100px;
-    }
-  }
-
-  &:last-of-type {
-    margin-bottom: 52px;
-
-    @media (min-width: @tablet-width) {
-      margin-bottom: 78px;
-    }
-
-    @media (min-width: @desktop-width) {
-      margin-bottom: 75px;
-    }
+    width: 51.334%;
   }
 }

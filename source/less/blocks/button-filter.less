@@ -1,9 +1,10 @@
-.filter-button {
+.button-filter {
   position: absolute;
   top: 158px;
 
   @media (min-width: @tablet-width) {
-    top: 257px;
+    top: 266px;
+    right: 13px;
   }
 
   @media (min-width: @desktop-width) {
@@ -11,7 +12,7 @@
   }
 }
 
-.filter-button__post {
+.button-filter__post {
   display: block;
   width: 280px;
   border: 3px solid @varnich;
@@ -20,9 +21,10 @@
   .size(@eighteen);
   .weight(@seven-hundred);
   color: @varnich;
-  padding: 14px 90px 21px 91px;
+  padding: 12px 90px 21px 88px;
   height: 55px;
   margin-bottom: 12px;
+  font-family: "Open Sans", "Arial", sans-serif;
 
   &:hover {
     background-color: @varnich;
@@ -35,18 +37,20 @@
 
   @media (min-width: @tablet-width) {
     width: 260px;
-    padding: 14px 90px 21px 78px;
+    padding: 12px 90px 19px 80px;
     margin-bottom: 24px;
   }
 
   @media (min-width: @desktop-width) {
     display: inline-block;
     width: 183px;
-    padding: 14px 90px 21px 44px;
+    padding: 13px 90px 21px 39px;
+    margin-right: 40px;
+    margin-top: -2px;
   }
 }
 
-.filter-button__canceling {
+.button-filter__canceling {
   display: block;
   width: 280px;
   border: 3px solid fade(@base-color, 10%);
@@ -79,5 +83,6 @@
     display: inline-block;
     width: 183px;
     padding: 14px 90px 21px 55px;
+    margin-right: -13px;
   }
 }
