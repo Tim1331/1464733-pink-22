@@ -7,6 +7,10 @@
     color: @base-color;
   }
 
+  &--input-active {
+    border: 2px solid @varnich;
+  }
+
   padding: 3px 0 0 7.1%;
   border: 2px solid @border-form;
   border-radius: 2px;
@@ -22,6 +26,10 @@
   }
 
   &--surname {
+    &:hover {
+      border: 2px solid @base-color;
+    }
+
     @media (min-width: @tablet-width) {
       width: 80.86%;
       margin-left: 95px;
@@ -35,6 +43,10 @@
   }
 
   &--name {
+    &:hover {
+      border: 2px solid @base-color;
+    }
+
     @media (min-width: @tablet-width) {
       margin-top: 52px;
       margin-left: 19px;
@@ -48,6 +60,10 @@
   }
 
   &--patronymic {
+    &:hover {
+      border: 2px solid @base-color;
+    }
+
     @media (min-width: @tablet-width) {
       width: 80.8%;
       margin-left: 19px;

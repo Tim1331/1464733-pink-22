@@ -75,6 +75,22 @@
   }
 
   &__content:nth-of-type(2) {
+    a {
+      color: @varnich;
+      text-decoration: none;
+    }
+
+    a:hover {
+      color: @base-color;
+      text-decoration: underline;
+    }
+
+    a:active {
+      color: @base-color;
+      opacity: 0.3;
+      text-decoration: none;
+    }
+
     @media (min-width: @tablet-width) {
       grid-row-start: 1;
       grid-row-end: 2;
