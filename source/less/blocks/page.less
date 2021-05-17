@@ -1,5 +1,9 @@
 .page {
   height: 100%;
+
+  @media (min-width: @tablet-width) {
+    overflow-x: hidden;
+  }
 }
 
 .page__body {
@@ -9,4 +13,5 @@
   .size(@fourteen);
   color: @base-color;
   .weight(@four-hundred);
+  overflow-x: hidden;
 }

@@ -1,5 +1,15 @@
 .filter-elements {
   .center;
+
+  @media (min-width: @tablet-width) {
+    height: 454px;
+    background-color: @bg-grey;
+  }
+
+  @media (min-width: @desktop-width) {
+    height: 457px;
+    margin-bottom: 76px;
+  }
 }
 
 .filter-elements__icon {
@@ -10,8 +20,6 @@
   .wrapper;
   width: 280px;
   height: 374px;
-  outline: 2px solid black;
-  outline-offset: -2px;
   margin-bottom: 42px;
 
   @media (min-width: @tablet-width) {

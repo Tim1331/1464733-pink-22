@@ -124,10 +124,11 @@
 
   @media (min-width: @desktop-width) {
     width: 100%;
-    flex-direction: row;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-rows: 44px 81px 96px;
+    grid-template-columns: 34.6% 30.8% 34.6%;
     box-sizing: border-box;
-    padding-bottom: 11px;
+    padding-bottom: 0;
   }
 }
 
@@ -356,8 +357,12 @@
   }
 
   @media (min-width: @desktop-width) {
-    width: 62.326%;
-    margin-bottom: 30px;
+    width: 41.326%;
+    margin-bottom: 0;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 4;
   }
 
   &--data-legend {

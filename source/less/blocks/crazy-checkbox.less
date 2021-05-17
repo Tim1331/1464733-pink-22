@@ -17,46 +17,66 @@
 
   @media (min-width: @desktop-width) {
     margin-left: 0;
+    margin-bottom: 0;
+    margin-top: 0;
+    padding-top: 4px;
 
     &:first-of-type {
-      order: -5;
       padding-left: 117px;
-      margin-top: 17px;
+      grid-row-start: 2;
+      grid-row-end: 3;
+      grid-column-start: 1;
+      grid-column-end: 2;
     }
 
     &:nth-of-type(2) {
-      order: -2;
-      margin-top: 3px;
+      grid-column-start: 1;
+      grid-column-end: 2;
+      grid-row-start: 3;
+      grid-row-end: 4;
     }
 
     &:nth-of-type(3) {
-      order: -4;
-      padding-left: 116px;
-      margin-top: 17px;
+      padding-left: 107px;
+      grid-row-start: 2;
+      grid-row-end: 3;
+      grid-column-start: 2;
+      grid-column-end: 3;
 
       &::before {
-        left: 57px;
+        left: 49px;
+        top: 0;
+      }
+
+      &::after {
+        left: 49px;
+        top: 0;
       }
     }
 
     &:nth-of-type(4) {
-      order: -1;
-      padding-left: 154px;
+      padding-left: 108px;
+      grid-column-start: 2;
+      grid-column-end: 3;
+      grid-row-start: 3;
+      grid-row-end: 4;
 
       &::before {
-        left: 96px;
-        top: -4px;
+        left: 49px;
+        top: 1px;
       }
     }
 
     &:nth-of-type(5) {
-      order: -3;
       padding-left: 113px;
-      margin-top: 17px;
-
+      grid-row-start: 2;
+      grid-row-end: 3;
+      grid-column-start: 3;
+      grid-column-end: 4;
 
       &::before {
-        left: 55px;
+        left: 56px;
+        top: 0;
       }
     }
 
@@ -64,8 +84,8 @@
       order: 0;
 
       &::before {
-        left: 65px;
-        top: -4px;
+        left: 56px;
+        top: 0;
       }
     }
   }
@@ -84,11 +104,12 @@
 
     @media (min-width: @tablet-width) {
       left: 58px;
-      top: -3px;
+      top: 0;
     }
 
     @media (min-width: @desktop-width) {
       left: 58px;
+      top: 0;
     }
   }
 
@@ -115,8 +136,12 @@
     }
 
     @media (min-width: @desktop-width) {
-      margin-top: 4px;
-      padding-left: 124px;
+      padding-left: 115px;
+      margin-bottom: 0;
+      grid-column-start: 3;
+      grid-column-end: 4;
+      grid-row-start: 3;
+      grid-row-end: 4;
     }
   }
 }
@@ -135,22 +160,24 @@
       left: 67px;
       top: 8px;
     }
+
+    @media (min-width: @desktop-width) {
+      left: 67px;
+      top: 11px;
+    }
   }
 
   @media (min-width: @desktop-width) {
-    &:checked + .crazy-checkbox__label:nth-of-type(5)::after {
-      left: 65px;
-      top: 8px;
-    }
-
+    &:checked + .crazy-checkbox__label:nth-of-type(3)::after,
     &:checked + .crazy-checkbox__label:nth-of-type(4)::after {
-      left: 105px;
-      top: 8px;
+      left: 59px;
+      top: 11px;
     }
 
+    &:checked + .crazy-checkbox__label:nth-of-type(5)::after,
     &:checked + .crazy-checkbox__label:last-of-type::after {
-      left: 75px;
-      top: 8px;
+      left: 65px;
+      top: 11px;
     }
   }
 }

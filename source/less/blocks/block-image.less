@@ -1,7 +1,32 @@
 .block-image {
-  outline: 2px solid red;
-  outline-offset: -2px;
   height: 137px;
+  position: relative;
+
+  &::before {
+    content: "панорама дня";
+    padding: 7px 20px 8px 19px;
+    width: 101px;
+    height: 21px;
+    background-color: @varnich;
+    text-transform: uppercase;
+    position: absolute;
+    top: 0;
+    right: 20px;
+    color: @light;
+    .size(@twelve);
+    .weight(@seven-hundred);
+    .lh(@twenty-four);
+
+    @media (min-width: @tablet-width) {
+      top: 57px;
+      right: 20px;
+    }
+
+    @media (min-width: @desktop-width) {
+      top: 54px;
+      right: 130px;
+    }
+  }
 
   @media (min-width: @tablet-width) {
     height: 509px;
@@ -10,4 +35,10 @@
   @media (min-width: @desktop-width) {
     height: 506px;
   }
+}
+
+.block-image__start {
+  margin: 0 auto;
+  display: block;
+  width: 100%;
 }
