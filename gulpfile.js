@@ -39,26 +39,28 @@ const html = () => {
   .pipe(gulp.dest("build"));
 }
 
-exports.html = html;
 
 // Images
 
 const optimizeImages = () => {
-  return gulp.src("source/img/**/*. {png,jpg,svg}")
-  .pipe(imagemin([
-    imagemin.mozjpeg({progressive: true}),
-    imagemin.optipng({optimizationLevel: 3}),
-    imagemin.svgo()
-  ]))
-  .pipe(gulp.dest("source/img"))
+  return gulp.src("source/img/**/*.{png,jpg,svg}")
+    .pipe(imagemin([
+      imagemin.mozjpeg({progressive: true}),
+      imagemin.optipng({optimizationLevel: 3}),
+      imagemin.svgo()
+    ]))
+    .pipe(gulp.dest("build/img"))
 }
 
-exports.optimizeImages = optimizeImages;
+exports.images = optimizeImages;
 
 const copyImages = () => {
-  return gulp.src("source/img/**/*. {png,jpg,svg}")
-  .pipe(gulp.dest("source/img"))
+  return gulp.src("source/img/**/*.{png,jpg,svg}")
+    .pipe(gulp.dest("build/img"))
 }
+
+exports.images = copyImages;
+
 
 // Copy
 
@@ -88,7 +90,7 @@ const clean = () => {
 const server = (done) => {
   sync.init({
     server: {
-      baseDir: 'build'
+      baseDir: "build"
     },
     cors: true,
     notify: false,
@@ -102,7 +104,7 @@ exports.server = server;
 // Watcher
 
 const watcher = () => {
-  gulp.watch("source/less/**/*.less", gulp.series("styles"));
+  gulp.watch("source/less/**/*.less", gulp.series(styles));
   gulp.watch("source/*.html").on("change", sync.reload);
 }
 
@@ -120,6 +122,17 @@ const build = gulp.series(
 
 exports.build = build;
 
+// Default
+
 exports.default = gulp.series(
-  styles, server, watcher
-);
+  clean,
+  copy,
+  copyImages,
+  gulp.parallel(
+    styles,
+    html
+  ),
+  gulp.series(
+    server,
+    watcher
+  ));
