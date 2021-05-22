@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Пинк</title>
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
 </head>
 
 <body class="page__body">
@@ -61,6 +62,7 @@
       <p class="slogan-header__slogan">Фотографии пользователей</p>
     </section>
     <section class="block-offer">
+      <h2 class="visually-hidden">Блок с оффером</h2>
       <div class="block-offer__wrapper">
         <p class="block-offer__apple">Взгляните на фотографии, которые выкладывают  пользователи!<br>  Видите, как не хватает ваших?</p>
       </div>
@@ -70,7 +72,7 @@
       <picture>
         <source media="(min-width: 1200px)" srcset="img/panoramadesktop.jpg 1x, img/panoramadesktop@2x.jpg 2x">
         <source media="(min-width: 660px)" srcset="img/panoramatablet.jpg 1x, img/panoramatablet@2x.jpg 2x">
-        <img class="block-image__start" src="img/panorama.jpg" srcset="img/panorama2x.jpg 2x">
+        <img class="block-image__start" alt="Панорамное изображение" src="img/panorama.jpg" srcset="img/panorama2x.jpg 2x">
       </picture>
     </section>
     <section class="photos-user">
@@ -93,7 +95,7 @@
               <picture>
                 <source media="(min-width: 1200px)" srcset="img/photo1desktop.jpg 1x, img/photo1desktop@2x.jpg 2x">
                 <source media="(min-width: 660px)" srcset="img/photo1tablet.jpg 1x, img/photo1tablet@2x.jpg 2x">
-                <img src="img/photo1mobile.jpg" srcset="img/photo1mobile@2x.jpg 2x">
+                <img src="img/photo1mobile.jpg" alt="Фотография парковки" srcset="img/photo1mobile@2x.jpg 2x">
               </picture>
             </div>
             <blockquote class="user-history__one">
@@ -110,7 +112,7 @@
               <picture>
                 <source media="(min-width: 1200px)" srcset="img/photo2desktop.jpg 1x, img/photo2desktop@2x.jpg 2x">
                 <source media="(min-width: 660px)" srcset="img/photo2tablet.jpg 1x, img/photo2tablet@2x.jpg 2x">
-                <img src="img/photo2mobile.jpg" srcset="img/photo2mobile@2x.jpg 2x">
+                <img src="img/photo2mobile.jpg" alt="Фотография барабанов" srcset="img/photo2mobile@2x.jpg 2x">
               </picture>
             </div>
             <blockquote class="user-history__one">
@@ -127,7 +129,7 @@
               <picture>
                 <source media="(min-width: 1200px)" srcset="img/photo3desktop.jpg 1x, img/photo3desktop@2x.jpg 2x">
                 <source media="(min-width: 660px)" srcset="img/photo3tablet.jpg 1x, img/photo3tablet@2x.jpg 2x">
-                <img src="img/photo3mobile.jpg" srcset="img/photo3mobile@2x.jpg 2x">
+                <img src="img/photo3mobile.jpg" alt="Витражный потолок" srcset="img/photo3mobile@2x.jpg 2x">
               </picture>
             </div>
             <blockquote class="user-history__one">
@@ -144,7 +146,7 @@
               <picture>
                 <source media="(min-width: 1200px)" srcset="img/photo4desktop.jpg 1x, img/photo4desktop@2x.jpg 2x">
                 <source media="(min-width: 660px)" srcset="img/photo4tablet.jpg 1x, img/photo4tablet@2x.jpg 2x">
-                <img src="img/photo4mobile.jpg" srcset="img/photo4mobile@2x.jpg 2x">
+                <img src="img/photo4mobile.jpg" alt="Ярмарка бахчи" srcset="img/photo4mobile@2x.jpg 2x">
               </picture>
             </div>
             <blockquote class="user-history__one">
@@ -160,7 +162,7 @@
               <picture>
                 <source media="(min-width: 1200px)" srcset="img/photo5desktop.jpg 1x, img/photo5desktop@2x.jpg 2x">
                 <source media="(min-width: 660px)" srcset="img/photo5tablet.jpg 1x, img/photo5tablet@2x.jpg 2x">
-                <img src="img/photo5mobile.jpg" srcset="img/photo5mobile@2x.jpg 2x">
+                <img src="img/photo5mobile.jpg" alt="Ноги и холмы" srcset="img/photo5mobile@2x.jpg 2x">
               </picture>
             </div>
             <blockquote class="user-history__one">
@@ -176,7 +178,7 @@
               <picture>
                 <source media="(min-width: 1200px)" srcset="img/photo6desktop.jpg 1x, img/photo6desktop@2x.jpg 2x">
                 <source media="(min-width: 660px)" srcset="img/photo6tablet.jpg 1x, img/photo6tablet@2x.jpg 2x">
-                <img src="img/photo6mobile.jpg" srcset="img/photo6mobile@2x.jpg 2x">
+                <img src="img/photo6mobile.jpg" alt="Крыло самолёта" srcset="img/photo6mobile@2x.jpg 2x">
               </picture>
             </div>
             <blockquote class="user-history__one">
@@ -199,7 +201,7 @@
         <picture>
           <source media="(min-width: 1200px)" srcset="img/winterdesktop.jpg 1x, img/winterdesktop@2x.jpg 2x">
           <source media="(min-width: 660px)" srcset="img/wintertablet.jpg 1x, img/wintertablet@2x.jpg 2x">
-          <img src="img/wintermobile.jpg" srcset="img/wintermobile@2x.jpg 2x">
+          <img src="img/wintermobile.jpg" alt="Зима" srcset="img/wintermobile@2x.jpg 2x">
         </picture>
       </div>
       <div class="photo-filter__block">
@@ -212,21 +214,21 @@
           <div class="photo-filter__scale">
             <div class="photo-filter__bar"></div>
           </div>
-          <div class="photo-filter__toggle photo-filter" tabindex="0" aria-label="элемент выбора">
+          <div class="photo-filter__toggle photo-filter" tabindex="0">
           </div>
         </div>
         <div class="photo-filter__range-two">
           <div class="photo-filter__scale">
             <div class="photo-filter__bar"></div>
           </div>
-          <div class="photo-filter__toggle filter-elements__toggle--active" tabindex="0" aria-label="элемент выбора">
+          <div class="photo-filter__toggle filter-elements__toggle--active" tabindex="0">
           </div>
         </div>
         <div class="photo-filter__range-three">
           <div class="photo-filter__scale">
             <div class="photo-filter__bar"></div>
           </div>
-          <div class="photo-filter__toggle photo-filter__toggle" tabindex="0" aria-label="элемент выбора">
+          <div class="photo-filter__toggle photo-filter__toggle" tabindex="0">
           </div>
         </div>
         <div class="button-filter">
