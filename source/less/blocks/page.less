@@ -14,5 +14,8 @@
   color: @base-color;
   .weight(@four-hundred);
   overflow-x: hidden;
-  overflow-y: hidden;
+
+  @media (min-width: @desktop-width) {
+    overflow-y: hidden;
+  }
 }

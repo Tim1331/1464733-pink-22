@@ -4,6 +4,19 @@
   z-index: 0;
   top: -3px;
 
+  iframe {
+    width: 100%;
+    height: 200px;
+
+    @media (min-width: @tablet-width) {
+      height: 374px;
+    }
+
+    @media (min-width: @desktop-width) {
+      height: 502px;
+    }
+  }
+
   &::after {
     content: "";
     width: 16px;
@@ -36,12 +49,5 @@
   @media (min-width: @desktop-width) {
     height: 502px;
     top: -107px;
-  }
-}
-
-.map-block iframe {
-  @media (min-width: @tablet-width) {
-    width: 100%;
-    height: 100%;
   }
 }

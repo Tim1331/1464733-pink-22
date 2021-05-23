@@ -1,6 +1,10 @@
 .attachment-radio {
   background-color: @bg-grey;
 
+  @media (min-width: @tablet-width) {
+    background-color: @light;
+  }
+
   &:checked {
     &:hover {
       border: 2px solid @base-color;
