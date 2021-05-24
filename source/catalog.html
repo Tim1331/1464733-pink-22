@@ -215,7 +215,7 @@
       <h2 class="visually-hidden">Блок с фильтром</h2>
       <div class="photo-filter__wrapper filter-elements">
         <div class="filter-elements-image">
-          <a class="filter-elements-image__link" href="">
+          <a class="filter-elements-image__link" href="#">
             <picture>
               <source media="(min-width: 1200px)" srcset="img/winterdesktop.jpg 1x, img/winterdesktop@2x.jpg 2x">
               <source media="(min-width: 660px)" srcset="img/wintertablet.jpg 1x, img/wintertablet@2x.jpg 2x">
@@ -251,8 +251,12 @@
             </div>
           </div>
           <div class="button-filter">
-            <button class="button-filter__post" type="button">Запостить</button>
-            <button class="button-filter__canceling" type="button">Отмена</button>
+            <form class="button-filter__form" method="post" action="https://echo.htmlacademy.ru">
+              <label for="dispatch" class="button-filter__post">Запостить</label>
+              <input type="submit" id="dispatch" class="button-filter__post visually-hidden" type="button">
+              <label for="dump" class="button-filter__canceling">Отмена</label>
+              <input type="reset" id="dump" class="button-filter__canceling visually-hidden" type="button">
+            </form>
           </div>
         </div>
       </div>
